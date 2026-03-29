@@ -1,0 +1,336 @@
+@font-face {
+  font-family: 'Norsebold';
+  src: url('fonts/Norsebold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Norse';
+  src: url('fonts/Norse.otf') format('opentype');
+}
+
+
+:root {
+  --background: hsl(222.2 84% 4.9%);
+  --foreground: hsl( 210 40% 98%);
+  --primary: hsl(225, 84%, 49%);
+  --primary-foreground: hsl(222, 47%, 11%);
+  --muted: hsl(217.2 32.6% 17.5%);
+  --muted-foreground: hsl(215 20.2% 65.1%);
+  --accent: hsl(217.2 32.6% 17.5%);
+  --border: hsl(217.2 32.6% 17.5%);
+
+  --radius: 1rem;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  --font-mono: ui-monospace, monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 500px;
+  min-height: 750px;
+    height: 750px;
+  background: var(--background);
+  font-family: var(--font-sans);
+  color: var(--foreground);
+}
+
+.music-player {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.album-art-container { position: relative; margin-bottom: 0.5rem; }
+
+.album-art-wrapper {
+  width: 224px;
+  height: 224px;
+  border-radius: 50%;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+  animation: rotate 20s linear infinite;
+  animation-play-state: paused;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.album-art-wrapper.playing { animation-play-state: running; }
+.album-art { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+
+.song-info { text-align: center; width: 100%; }
+
+.song-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.25rem;
+  color: var(--foreground);
+ /* font-family: 'NorseCustom', sans-serif;
+  letter-spacing: 3px;*/
+}
+
+.artist-name { 
+  font-size: 0.875rem;
+   color: var(--muted-foreground); 
+   margin-bottom: 0.5rem;
+  /*  font-family: 'NorseCustom', sans-serif;
+  letter-spacing: 3px;*/
+   }
+
+.ui-fadeable { transition: opacity 1.5s ease; }
+.ui-fadeable.faded { opacity: 0; pointer-events: none; }
+
+.progress-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--muted-foreground);
+}
+
+.time-current, .time-duration { min-width: 40px; }
+.progress-bar-wrapper { flex: 1; }
+
+.progress-bar {
+  --progress: 0%;
+  width: 100%;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--muted);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -4px;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+
+.progress-bar::-webkit-slider-runnable-track {
+  height: 4px;
+  background: linear-gradient(to right,
+    var(--primary) 0%,
+    var(--primary) var(--progress),
+    var(--muted) var(--progress),
+    var(--muted) 100%);
+  border-radius: 4px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.control-btn {
+  background: transparent;
+  border: none;
+color: hsl(from var(--foreground));
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+}
+
+.control-btn:hover { color: var(--foreground);  }
+.control-btn:active { transform: scale(0.80); }
+
+.play-btn {
+  background: transparent;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.play-btn:hover { transform: scale(1.20); }
+.play-btn:active { transform: scale(0.80); }
+.play-btn img { width: 32px; height: 32px; }
+
+.volume-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+}
+
+.volume-label { color: var(--muted-foreground); }
+
+.volume-slider {
+  flex: 1;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--muted);
+  border-radius: 4px;
+  outline: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: var(--foreground);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.boost-value { font-size: 0.75rem; font-weight: bold; color: var(--foreground); min-width: 45px; text-align: right; }
+
+.playlist-toggle {
+  width: 100%;
+  padding: 0.75rem;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius);
+  color: var(--foreground);
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.playlist-toggle:hover {transform: scale(1.20); }
+
+.playlist {
+  width: 100%;
+  max-height: 250px;
+  border: var(--border);
+  overflow-y: auto;
+  background: var(--background);
+  border-radius: var(--radius);
+  padding: 0.5rem;
+}
+
+.playlist.hidden { display: none; }
+
+.playlist-item {
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 0.7rem;
+  transition: all 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--foreground);
+}
+
+.playlist-item:hover { background: var(--accent); }
+.playlist-item.active { background: var(--accent); color: var(--foreground); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: hsl(223, 84%, 5%); border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: hsl(217, 33%, 17%); border-radius: 3px; }
+
+.bottom-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.folder-btn {
+  background: transparent;
+  border: none;
+  border-radius: var(--radius);
+  color: var(--foreground);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.folder-btn:hover { transform: scale(1.20); }
+
+.theme-select,
+.mode-select {
+  background: hsl(0, 0%, 9%);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.375rem 0.5rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.theme-select { flex: 1; }
+.mode-select { flex-shrink: 0; }
+.theme-select:hover, .mode-select:hover { border-color: var(--foreground); }
+
+
+
+/* text wrapper surrounding the turn table */
+.album-art-container {
+  position: relative;
+  width: 300px; /* Adjust based on your UI */
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.curved-text-svg {
+  position: absolute;
+  width: 120%; /* Makes it sit slightly outside the record */
+  height: 120%;
+  pointer-events: none;
+  z-index: 10;
+  /* If you want the text to spin WITH the record, add your animation here */
+  /* animation: rotate 20s linear infinite; */
+}
+
+.vinyl-text {
+  fill: var(--text-color, #fff);  
+font-family: 'NorseCustom', sans-serif;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase; 
+}
+
+/* Ensure the wrapper is centered behind the text */
+.album-art-wrapper {
+  position: relative;
+  z-index: 5;
+}

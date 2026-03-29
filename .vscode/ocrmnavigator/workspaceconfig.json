@@ -1,0 +1,2853 @@
+{
+  "categories": [
+    {
+      "label": "MAIN",
+      "expanded": false,
+      "type": "folder",
+      "global": true,
+      "items": [
+        {
+          "label": "ASGARD",
+          "path": "code-insiders -n f:/asgard",
+          "type": "powershellCommand",
+          "icon": "powershell-command-baldr"
+        },
+        {
+          "label": "YGGDRASIL",
+          "path": "code-insiders -n f:/yggdrasil",
+          "type": "powershellCommand",
+          "icon": "powershell-command-baldr"
+        },
+        {
+          "label": "SLEIPNIR",
+          "path": "code-insiders -n f:/sleipnir",
+          "type": "powershellCommand",
+          "icon": "powershell-command-baldr"
+        },
+        {
+          "label": "TYR",
+          "path": "code-insiders -n f:/tyr",
+          "type": "powershellCommand",
+          "icon": "pixel-2-strike"
+        },
+        {
+          "label": "DevStack",
+          "path": "code-insiders -n f:/DevStack",
+          "type": "powershellCommand",
+          "icon": "valhalla-baldr"
+        },
+        {
+          "label": "BALDR",
+          "path": "code-insiders -n f:/baldr",
+          "type": "powershellCommand",
+          "icon": "symbol-event"
+        },
+        {
+          "label": "THOR",
+          "path": "code-insiders -n f:/css",
+          "type": "powershellCommand",
+          "icon": "symbol-event"
+        },
+        {
+          "label": "create-remixv2",
+          "path": "code-insiders -n f:/create-remixv2",
+          "type": "powershellCommand",
+          "icon": "symbol-event"
+        },
+        {
+          "label": "MIÐGARÐR",
+          "path": "code-insiders -n f:/midgardr",
+          "type": "powershellCommand",
+          "icon": "vulknut",
+          "items": [
+            {
+              "label": "MIÐGARÐR",
+              "path": "code-insiders -n f:/midgardr",
+              "type": "powershellCommand",
+              "icon": "vulknut"
+            },
+            {
+              "label": "COMPS AND BLOCKS TO REVIEW AND ADD",
+              "path": "code-insiders -n f:/demo2",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "MIÐGARÐR: NOTES",
+              "path": "code-insiders -n f:/midgardr-notes",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "CMDS",
+      "expanded": true,
+      "type": "folder",
+      "global": true,
+      "icon": "powershell-command-baldr",
+      "items": [
+        {
+          "label": "BIFRÖST Menu",
+          "path": "",
+          "type": "menu",
+          "icon": "pixel-2-stack",
+          "args": [
+            {
+              "label": "Auto blocks",
+              "path": "node ./F:/playground/scripts/auto-blocks.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "backup-devstack-core-files",
+              "path": "node ./F:/playground/scripts/backup-devstack-core-files.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "blocks-component-migrate",
+              "path": "node ./F:/playground/scripts/blocks-component-migrate.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "blocks-component-migrate2",
+              "path": "node ./F:/playground/scripts/blocks-component-migrate2.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "changeToData",
+              "path": "node ./F:/playground/scripts/changeToData.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "comps-update-deps-in-data",
+              "path": "bun ./F:/playground/scripts/comps-update-deps-in-data.ts",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "copy-global-navigator-config",
+              "path": "node ./F:/playground/scripts/copy-global-navigator-config.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "CopyAndRenameFiles",
+              "path": "./F:/playground/scripts/CopyAndRenameFiles.ps1",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "copyUsedIconsOver",
+              "path": "node ./F:/playground/scripts/copyUsedIconsOver.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "count-files",
+              "path": "node ./F:/playground/scripts/count-files.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "create-base-components",
+              "path": "node ./F:/playground/scripts/create-base-components.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "create-objects-for-data-files",
+              "path": "node ./F:/playground/scripts/create-objects-for-data-files.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "createImport",
+              "path": "./F:/playground/scripts/createImport.ps1",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "dbLocal",
+              "path": "node ./F:/playground/scripts/dbLocal.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "dbRemote",
+              "path": "node ./F:/playground/scripts/dbRemote.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "devStackComponents",
+              "path": "node ./F:/playground/scripts/devStackComponents.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "extract-new-x-comps",
+              "path": "node ./F:/playground/scripts/extract-new-x-comps.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "fixing-paths",
+              "path": "node ./F:/playground/scripts/fixing-paths.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "generate-ui-data-file-for-devstack",
+              "path": "node ./F:/playground/scripts/generate-ui-data-file-for-devstack.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "get-components-that-need-a-lofi",
+              "path": "node ./F:/playground/scripts/get-components-that-need-a-lofi.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "move-blocks-to-variants-cleaner",
+              "path": "node ./F:/playground/scripts/move-blocks-to-variants-cleaner.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "move-blocks-to-variants",
+              "path": "node ./F:/playground/scripts/move-blocks-to-variants.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "output",
+              "path": "node ./F:/playground/scripts/output.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "removeVariant",
+              "path": "node ./F:/playground/scripts/removeVariant.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "removeVariantFolder",
+              "path": "node ./F:/playground/scripts/removeVariantFolder.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "rename-blocks",
+              "path": "node ./F:/playground/scripts/rename-blocks.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "rename-comps",
+              "path": "node ./F:/playground/scripts/rename-comps.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "renameDataVar",
+              "path": "node ./F:/playground/scripts/renameDataVar.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "replaceImports",
+              "path": "node ./F:/playground/scripts/replaceImports.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "sandbox-import-generator",
+              "path": "node ./F:/playground/scripts/sandbox-import-generator.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "scanForLucideImports",
+              "path": "node ./F:/playground/scripts/scanForLucideImports.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "transform-registry",
+              "path": "node ./F:/playground/scripts/transform-registry.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "updatePath",
+              "path": "node ./F:/playground/scripts/updatePath.js",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "updatePath",
+              "path": "node ./F:/playground/scripts/updatePath.js",
+              "type": "powershellCommand"
+            }
+          ]
+        },
+        {
+          "label": "Toggle Zen Mode",
+          "path": "workbench.action.toggleZenMode",
+          "type": "command",
+          "icon": "pixel-2-game"
+        },
+        {
+          "label": "Search Editor",
+          "path": "ocrmnavigator.odin.open",
+          "type": "command",
+          "icon": "pixel-2-search2"
+        },
+        {
+          "label": "Search VSCode",
+          "path": "",
+          "type": "search",
+          "icon": "search-baldr"
+        },
+        {
+          "label": "Format",
+          "path": "formatfile, saveall",
+          "type": "chain"
+        },
+        {
+          "label": "1 DEV",
+          "path": "saveall, killterms, startDevServer",
+          "type": "chain",
+          "icon": "remix-baldr",
+          "tooltipText": "SINGLE KILL Terminals && Start DEV Server"
+        },
+        {
+          "label": "2 DEV",
+          "path": "saveall, killterms, devApp",
+          "type": "chain",
+          "icon": "remix-baldr",
+          "tooltipText": "MONO KILL Terminals && Start DEV Server"
+        },
+        {
+          "label": "FOLD LEVEL 1",
+          "path": "editor.foldLevel1",
+          "type": "command",
+          "icon": "pixel-2-prank",
+          "items": [
+            {
+              "label": "2",
+              "path": "editor.foldLevel2",
+              "type": "command",
+              "icon": "fold-down"
+            },
+            {
+              "label": "3",
+              "path": "editor.foldLevel3",
+              "type": "command",
+              "icon": "fold-down"
+            },
+            {
+              "label": "UNFOLD All",
+              "path": "editor.unfoldAll",
+              "type": "command",
+              "icon": "fold-down"
+            },
+            {
+              "label": "4",
+              "path": "editor.foldLevel4",
+              "type": "command",
+              "icon": "fold-down"
+            },
+            {
+              "label": "5",
+              "path": "editor.foldLevel5",
+              "type": "command",
+              "icon": "fold-down"
+            },
+            {
+              "label": "6",
+              "path": "editor.foldLevel6",
+              "type": "command",
+              "icon": "fold-down"
+            },
+            {
+              "label": "7",
+              "path": "editor.foldLevel7",
+              "type": "command",
+              "icon": "fold-down"
+            },
+            {
+              "label": "",
+              "path": "editor.foldLevel7",
+              "type": "command",
+              "icon": "fold-down"
+            },
+            {
+              "label": "",
+              "path": "editor.foldLevel7",
+              "type": "command",
+              "icon": "fold-down"
+            }
+          ]
+        },
+        {
+          "label": "Format .json",
+          "path": "ocrmnavigator.format.json.file.opinionated",
+          "type": "command",
+          "icon": "pixel-2-ask",
+          "items": [
+            {
+              "label": "TGL Json Errors",
+              "path": "ocrmnavigator.performanceSwitch.json.validate.toggle",
+              "type": "command",
+              "icon": "file-json"
+            },
+            {
+              "label": "TGL Jsonc Errors",
+              "path": "ocrmnavigator.performanceSwitch.jsonc.validate.toggle",
+              "type": "command",
+              "icon": "file-json"
+            }
+          ]
+        },
+        {
+          "label": "TGL LEVEL 1",
+          "path": "ocrmnavigator.vscode.region.1.toggle",
+          "type": "command",
+          "icon": "fold-down",
+          "items": [
+            {
+              "label": "TGL LEVEL 2",
+              "path": "ocrmnavigator.vscode.region.2.toggle",
+              "type": "command",
+              "icon": "fold-down"
+            },
+            {
+              "label": "TGL LEVEL 3",
+              "path": "ocrmnavigator.vscode.region.3.toggle",
+              "type": "command",
+              "icon": "fold-down"
+            },
+            {
+              "label": "TGL LEVEL 4",
+              "path": "ocrmnavigator.vscode.region.4.toggle",
+              "type": "command",
+              "icon": "fold-down"
+            },
+            {
+              "label": "TGL LEVEL 5",
+              "path": "ocrmnavigator.vscode.region.5.toggle",
+              "type": "command",
+              "icon": "fold-down"
+            },
+            {
+              "label": "TGL LEVEL 6",
+              "path": "ocrmnavigator.vscode.region.6.toggle",
+              "type": "command",
+              "icon": "fold-down"
+            },
+            {
+              "label": "TGL LEVEL 7",
+              "path": "ocrmnavigator.vscode.region.7.toggle",
+              "type": "command",
+              "icon": "fold-down"
+            }
+          ]
+        },
+        {
+          "label": "Window",
+          "path": "formatfile, saveall, reloadWindow",
+          "type": "chain",
+          "icon": "pixel-refresh-solid",
+          "tooltipText": "Reload Window",
+          "items": [
+            {
+              "label": "Terminals",
+              "path": "workbench.action.terminal.killAll",
+              "type": "command",
+              "icon": "debug-stop"
+            },
+            {
+              "label": "editors",
+              "path": "saveall, closeeditors",
+              "type": "chain",
+              "icon": "close"
+            },
+            {
+              "label": "toggle 💻",
+              "path": "workbench.action.terminal.toggleTerminal",
+              "type": "command",
+              "icon": "unfold"
+            },
+            {
+              "label": "TS",
+              "path": "formatfile, saveall, reloadWindow",
+              "type": "chain",
+              "icon": "refresh",
+              "tooltipText": "Reload Window"
+            },
+            {
+              "label": "DevTools",
+              "path": "formatfile, saveall, reloadWindow",
+              "type": "chain",
+              "icon": "tools-baldr",
+              "tooltipText": "Open DevTools"
+            },
+            {
+              "label": "Kill PORT 3000",
+              "path": "killPort3000",
+              "type": "command",
+              "icon": "x"
+            }
+          ]
+        },
+        {
+          "label": "MONOREPO",
+          "type": "folder",
+          "expanded": false,
+          "items": [
+            {
+              "label": "dev:all",
+              "path": "devApp, devCalc",
+              "type": "concurrent"
+            },
+            {
+              "label": "nuclear:all",
+              "path": "nuclear:all",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "dev:app",
+              "path": "saveall, killterms, devApp",
+              "type": "chain"
+            },
+            {
+              "label": "patch:app",
+              "path": "cd apps/app && git add * && git commit -m \"Cleaning w/ push\" && git push && pnpm version patch && git push && git push --tags && cd ../..",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "db:app",
+              "path": "cd apps/app && pnpm run db:all && cd ../..",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "clean:app",
+              "path": "cd apps/app && foreach ($path in @('.cache', 'build', 'node_modules', 'pnpm-lock.yaml', 'public\\build' )) { if (Test-Path $path) { Remove-Item -Path $path -Recurse -Force -ErrorAction SilentlyContinue } } && cd ../..",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "clean:all",
+              "path": "cleanApp, cleanProd, cleanCalc, cleanRoot",
+              "type": "concurrent"
+            },
+            {
+              "label": "i:all",
+              "path": "iapp, iProd, iRoot, iCalc",
+              "type": "concurrent"
+            },
+            {
+              "label": "build:all",
+              "path": "buildapp, buildProd, buildCalc",
+              "type": "concurrent"
+            },
+            {
+              "label": "patch:all",
+              "path": "patchRoot, patchapp, patchProd, patchCalc",
+              "type": "concurrent"
+            },
+            {
+              "label": "push:all",
+              "path": "pushCalc, pushProd, pushApp, pushRoot",
+              "type": "concurrent"
+            },
+            {
+              "label": "db:all local",
+              "path": "saveall, dbAllLocal, dbCalc, dbApp",
+              "type": "chain"
+            },
+            {
+              "label": "db:all remote",
+              "path": "saveall, dbAllRemote, dbCalc, dbApp",
+              "type": "chain"
+            },
+            {
+              "label": "db:prod",
+              "path": "cd apps/prod && pnpm run db:all && cd ../..",
+              "type": "powershellCommand"
+            },
+            {
+              "label": "gen:all",
+              "path": "genCalc, genApp",
+              "type": "concurrent"
+            },
+            {
+              "label": "gen:prod",
+              "path": "cd apps/prod && pnpm run db:gen && cd ../..",
+              "type": "powershellCommand"
+            }
+          ]
+        },
+        {
+          "label": "SINGLE REPO",
+          "type": "folder",
+          "expanded": false,
+          "items": [
+            {
+              "label": "dev",
+              "path": "saveall, killterms, singlestrdev",
+              "type": "chain"
+            },
+            {
+              "label": "patch",
+              "path": "saveall, singlestrpatch",
+              "type": "chain"
+            },
+            {
+              "label": "db:all local",
+              "path": "saveall, killterms, dbAllLocal",
+              "type": "chain"
+            },
+            {
+              "label": "db:all remote",
+              "path": "saveall, killterms, dbAllRemote",
+              "type": "chain"
+            },
+            {
+              "label": "i",
+              "path": "saveall, killterms, terminalInstall",
+              "type": "chain"
+            },
+            {
+              "label": "fromScratch",
+              "path": "saveall, killterms, singlestrfromScratch",
+              "type": "chain"
+            },
+            {
+              "label": "build",
+              "path": "saveall, killterms, runBuild",
+              "type": "chain"
+            },
+            {
+              "label": "start",
+              "path": "saveall, killterms, runStart",
+              "type": "chain"
+            },
+            {
+              "label": "clean",
+              "path": "saveall, killterms, singlestrclean",
+              "type": "chain"
+            },
+            {
+              "label": "i:shadCN",
+              "path": "saveall, killterms, singlestrshadCN",
+              "type": "chain"
+            },
+            {
+              "label": "i:component",
+              "path": "saveall, killterms, singlestrcomponent",
+              "type": "chain"
+            },
+            {
+              "label": "db:gen",
+              "path": "saveall, killterms, prismaGenerate",
+              "type": "chain"
+            },
+            {
+              "label": "db:seed",
+              "path": "saveall, killterms, singlestrdbseed",
+              "type": "chain"
+            },
+            {
+              "label": "db:studio",
+              "path": "singlestrdbstudio",
+              "type": "chain"
+            }
+          ]
+        },
+        {
+          "label": "DIVIDERS",
+          "expanded": false,
+          "type": "folder",
+          "global": true,
+          "items": [
+            {
+              "label": "★ ━━━━ ☆ ━━━━ PROCESS FILE ━━━━ ☆ ━━━━ ★",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "pixel-2-spook"
+            },
+            {
+              "label": "━━━━ ● ━━━━ ● ━━━━",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "circle-dot"
+            },
+            {
+              "label": "★ ━━━━ ☆ ━━━━ ━━━━ ☆ ━━━━",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "star"
+            },
+            {
+              "label": "━━━━ ◆ ━━━━ ◆ ━━━━ ◆ ━━━━ ◆ ━━━━",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "diamond"
+            },
+            {
+              "label": "━━━━ ☆ ━━━━━━━━━━━━━",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "minus"
+            },
+            {
+              "label": "═══════════════════",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "grip-horizontal"
+            },
+            {
+              "label": "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "maximize-2"
+            },
+            {
+              "label": "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "grid-3x3"
+            },
+            {
+              "label": "░░░░░░░░░░░░░░░░░░░░",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "grid"
+            },
+            {
+              "label": "┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "more-horizontal"
+            },
+            {
+              "label": "┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "more-horizontal"
+            },
+            {
+              "label": "┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "menu"
+            },
+            {
+              "label": "━ ━ ━ ━ ━ ━ ━ ━ ━ ━",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "minus"
+            },
+            {
+              "label": "─ ─ ─ ─ ─ ─ ─ ─ ─ ─",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "minus"
+            },
+            {
+              "label": "● ● ● ● ● ● ● ● ● ●",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "circle"
+            },
+            {
+              "label": "○ ○ ○ ○ ○ ○ ○ ○ ○ ○",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "circle"
+            },
+            {
+              "label": "• • • • • • • • • •",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "more-horizontal"
+            },
+            {
+              "label": "★ ★ ★ ★ ★ ★ ★ ★ ★ ★",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "star"
+            },
+            {
+              "label": "☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "star"
+            },
+            {
+              "label": "◆ ◆ ◆ ◆ ◆ ◆ ◆ ◆ ◆ ◆",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "diamond"
+            },
+            {
+              "label": "◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "diamond"
+            },
+            {
+              "label": "■ ■ ■ ■ ■ ■ ■ ■ ■ ■",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "square"
+            },
+            {
+              "label": "□ □ □ □ □ □ □ □ □ □",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "square"
+            },
+            {
+              "label": "▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "square"
+            },
+            {
+              "label": "▫ ▫ ▫ ▫ ▫ ▫ ▫ ▫ ▫ ▫",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "square"
+            },
+            {
+              "label": "→ → → → → → → → → →",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "arrow-right"
+            },
+            {
+              "label": "⇒ ⇒ ⇒ ⇒ ⇒ ⇒ ⇒ ⇒ ⇒ ⇒",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "chevrons-right"
+            },
+            {
+              "label": "➜ ➜ ➜ ➜ ➜ ➜ ➜ ➜ ➜ ➜",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "arrow-right"
+            },
+            {
+              "label": "← ← ← ← ← ← ← ← ← ←",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "arrow-left"
+            },
+            {
+              "label": "⬅ ⬅ ⬅ ⬅ ⬅ ⬅ ⬅ ⬅ ⬅ ⬅",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "arrow-left"
+            },
+            {
+              "label": "╭──────────────────╮",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "corner-up-right"
+            },
+            {
+              "label": "╰──────────────────╯",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "corner-down-right"
+            },
+            {
+              "label": "╒══════════════════╕",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "frame"
+            },
+            {
+              "label": "╘══════════════════╛",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "frame"
+            },
+            {
+              "label": "╓──────────────────╖",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "frame"
+            },
+            {
+              "label": "╙──────────────────╜",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "frame"
+            },
+            {
+              "label": "▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "align-justify"
+            },
+            {
+              "label": "▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "align-justify"
+            },
+            {
+              "label": "▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "align-left"
+            },
+            {
+              "label": "▐▐▐▐▐▐▐▐▐▐▐▐▐▐▐▐▐▐▐▐",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "align-right"
+            },
+            {
+              "label": "… … … … … … … …",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "more-horizontal"
+            },
+            {
+              "label": "· · · · · · · · · ·",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "more-horizontal"
+            },
+            {
+              "label": "━━━ ➔ ━━━",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "arrow-right-circle"
+            },
+            {
+              "label": "═══ ⇒ ═══",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "fast-forward"
+            },
+            {
+              "label": "● ━━━━ ☆ ━━━━━━━━━ ●",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "circle-dot"
+            },
+            {
+              "label": "★ ━━━━ ☆ ━━━━━━━━━ ★",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "sparkles"
+            },
+            {
+              "label": "┊┊┊┊┊┊┊┊┊┊┊┊┊┊┊┊┊┊┊┊",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "separator-vertical"
+            },
+            {
+              "label": "┋┋┋┋┋┋┋┋┋┋┋┋┋┋┋┋┋┋┋┋",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "separator-vertical"
+            },
+            {
+              "label": "‖ ‖ ‖ ‖ ‖ ‖ ‖ ‖ ‖ ‖",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "pause"
+            },
+            {
+              "label": " → ← ↑ ↓ ⇒ ⇐ ← → ➔ ➜ ➞ ➡ ⇒ ⟹ ⬅ ⇐ ⟸ ⬆ ⇑ ⬇ ⇓ ↓↑",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "three-bars"
+            },
+            {
+              "label": "╒ ╓ ╕ ╖ ╘ ╙ ╛ ╜ ╭ ╮ ╰ ╯ ",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "three-bars"
+            },
+            {
+              "label": " ┄ ┅ ┆ ┇ ┈ ┉ ┊ ┋ ",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "three-bars"
+            },
+            {
+              "label": " □ ▪ ▫ ● ○ ◆ ◇ ★ ☆",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "three-bars"
+            },
+            {
+              "label": "• · … ― ‖ • · … ― ‖ ",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "three-bars"
+            },
+            {
+              "label": " ▀ ▄ █ ░ ▒ ▓ ▌ ▐ ■",
+              "path": "saveAll",
+              "type": "label",
+              "icon": "three-bars"
+            }
+          ]
+        },
+        {
+          "label": "HIDDEN",
+          "expanded": false,
+          "type": "folder",
+          "global": true,
+          "hidden": true,
+          "items": [
+            {
+              "label": "gen2tsU",
+              "path": "bun ./updaters/gen2.ts",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr",
+              "hidden": true
+            },
+            {
+              "label": "BuildCatalystFunctionsU",
+              "path": "bun ./updaters/build-catalyst-functions.ts",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr",
+              "hidden": true
+            },
+            {
+              "label": "MDPreProcessor",
+              "path": "ocrmnavigator.md.convertReadme",
+              "type": "command",
+              "icon": "md-baldr",
+              "hidden": true
+            },
+            {
+              "label": "pro7",
+              "path": "ocrmnavigator.pro7.acrhive",
+              "type": "command",
+              "icon": "json",
+              "hidden": true
+            },
+            {
+              "label": "CopyAndRenameFilesps1U",
+              "path": "powershell ./updaters/CopyAndRenameFiles.ps1",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr",
+              "hidden": true
+            },
+            {
+              "label": "generateiconinventoryjsU",
+              "path": "node ./updaters/generate-icon-inventory.js",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr",
+              "hidden": true
+            },
+            {
+              "label": "generateuiinventoryjsU",
+              "path": "node ./updaters/generate-ui-inventory.js",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr",
+              "hidden": true
+            },
+            {
+              "label": "iconlibraryinventoryjsU",
+              "path": "node ./updaters/icon-library-inventory.js",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr",
+              "hidden": true
+            },
+            {
+              "label": "updatepromptfrommdU",
+              "path": "node ./updaters/update-prompt-from-md.js",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr",
+              "hidden": true
+            },
+            {
+              "label": "Buildpkgjson",
+              "path": "ocrmnavigator.format.json.pkg",
+              "type": "command",
+              "icon": "json",
+              "hidden": true
+            },
+            {
+              "label": "CreatekgJsonCommandsQpMenu",
+              "path": "ocrmnavigator.menu.items.pkg.scan.convert.items",
+              "type": "command",
+              "icon": "three-bars",
+              "hidden": true
+            },
+            {
+              "label": "↓↓ DOES NOT WORK ↓↓",
+              "path": "saveall",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "pro7 - AR",
+              "path": "node ./src/autorun/pro7.js",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr",
+              "hidden": true
+            },
+            {
+              "label": "MD Pre-Processor - AR",
+              "path": "node ./src/autorun/markdown-pre-processor.js",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr",
+              "hidden": true
+            },
+            {
+              "label": "Build pkg.json - AR",
+              "path": "node ./src/autorun/build-package-json.js",
+              "type": "powershellCommand",
+              "icon": "powershell-command-baldr",
+              "hidden": true
+            },
+            {
+              "label": "pnpmrunbuild",
+              "path": "pnpm run build",
+              "type": "powershellCommand",
+              "icon": "versions",
+              "hidden": true
+            },
+            {
+              "label": "pnpmrunbuildall",
+              "path": "pnpm run buildall",
+              "type": "powershellCommand",
+              "icon": "versions",
+              "hidden": true
+            },
+            {
+              "label": "Bump Patch",
+              "path": "saveall, PatchVersion",
+              "type": "chain",
+              "icon": "versions",
+              "hidden": true
+            },
+            {
+              "label": "PatchVersion",
+              "path": "ocrmnavigator.version.patch",
+              "type": "command",
+              "icon": "versions",
+              "hidden": true
+            },
+            {
+              "label": "compileWIthPackager",
+              "path": "ocrmnavigator.project.compile",
+              "type": "command",
+              "icon": "archive",
+              "hidden": true
+            },
+            {
+              "label": "await5Secs",
+              "path": "ocrmnavigator.await.5",
+              "type": "command",
+              "icon": "md-baldr",
+              "hidden": true
+            },
+            {
+              "label": "await4Secs",
+              "path": "ocrmnavigator.await.4",
+              "type": "command",
+              "icon": "md-baldr",
+              "hidden": true
+            },
+            {
+              "label": "await3Secs",
+              "path": "ocrmnavigator.await.3",
+              "type": "command",
+              "icon": "md-baldr",
+              "hidden": true
+            },
+            {
+              "label": "await1Secs",
+              "path": "ocrmnavigator.await.1",
+              "type": "command",
+              "icon": "md-baldr",
+              "hidden": true
+            },
+            {
+              "label": "await2Secs",
+              "path": "ocrmnavigator.await.2",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "reloadWindow",
+              "path": "workbench.action.reloadWindow",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "generateAndBuild",
+              "path": "ocrmnavigator.project.compile",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "genCalc",
+              "path": "cd apps/calc && npx prisma generate && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "genApp",
+              "path": "cd apps/app && npx prisma generate && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "dbCalc",
+              "path": "cd apps/calc && npx tsx prisma/pre-seed.ts && npx prisma db push --force-reset && npx prisma db push && npx tsx prisma/seed.ts && npx prisma generate && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "dbApp",
+              "path": "cd apps/app && npx tsx prisma/pre-seed.ts && npx prisma db push --force-reset && npx prisma db push && npx tsx prisma/seed.ts && npx prisma generate && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "devApp",
+              "path": "cd apps/app && pnpm run dev",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "devCalc",
+              "path": "cd apps/calc && pnpm run dev",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "pushRoot",
+              "path": "git add * && git commit -m \"Cleaning w/ push\" && git push",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "pushApp",
+              "path": "cd apps/app && git add * && git commit -m \"Cleaning w/ push\" && git push && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "pushProd",
+              "path": "cd apps/prod && git add * && git commit -m \"Cleaning w/ push\" && git push && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "pushCalc",
+              "path": "cd apps/calc && git add * && git commit -m \"Cleaning w/ push\" && git push && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "patchRoot",
+              "path": "git add * && git commit -m \"Cleaning w/ push\" && git push && pnpm version patch && git push && git push --tags",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "patchapp",
+              "path": "cd apps/app && git add * && git commit -m \"Cleaning w/ push\" && git push && pnpm version patch && git push && git push --tags && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "patchProd",
+              "path": "cd apps/prod && git add * && git commit -m \"Cleaning w/ push\" && git push && pnpm version patch && git push && git push --tags && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "patchCalc",
+              "path": "cd apps/calc && git add * && git commit -m \"Cleaning w/ push\" && git push && pnpm version patch && git push && git push --tags && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "buildapp",
+              "path": "cd apps/app && pnpm run build && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "buildProd",
+              "path": "cd apps/prod && pnpm run build && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "buildCalc",
+              "path": "cd apps/calc && pnpm run build && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "iRoot",
+              "path": "pnpm i --prefer-offline --no-cache",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "iapp",
+              "path": "cd apps/app && pnpm install --ignore-workspace && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "iProd",
+              "path": "cd apps/prod && pnpm install --ignore-workspace && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "iCalc",
+              "path": "cd apps/calc && pnpm install --ignore-workspace && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "cleanRoot",
+              "path": "foreach ($path in @('.cache', 'build', 'node_modules', 'pnpm-lock.yaml', 'public\\build' )) { if (Test-Path $path) { Remove-Item -Path $path -Recurse -Force -ErrorAction SilentlyContinue } }",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "cleanApp",
+              "path": "cd apps/app && foreach ($path in @('.cache', 'build', 'node_modules', 'pnpm-lock.yaml', 'public\\build' )) { if (Test-Path $path) { Remove-Item -Path $path -Recurse -Force -ErrorAction SilentlyContinue } }",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "cleanProd",
+              "path": "cd apps/prod && foreach ($path in @('.cache', 'build', 'node_modules', 'pnpm-lock.yaml', 'public\\build' )) { if (Test-Path $path) { Remove-Item -Path $path -Recurse -Force -ErrorAction SilentlyContinue } }",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "cleanCalc",
+              "path": "cd apps/calc && foreach ($path in @('.cache', 'build', 'node_modules', 'pnpm-lock.yaml', 'public\\build' )) { if (Test-Path $path) { Remove-Item -Path $path -Recurse -Force -ErrorAction SilentlyContinue } }",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "iProd",
+              "path": "cd apps/prod && pnpm install --ignore-workspace && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "iCalc",
+              "path": "cd apps/calc && pnpm install --ignore-workspace && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "iApp",
+              "path": "cd apps/app && pnpm install --ignore-workspace && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "devProd",
+              "path": "cd apps/prod && pnpm run dev",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "devCalc",
+              "path": "cd apps/calc && pnpm run dev",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "devApp",
+              "path": "cd apps/app && pnpm run dev",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "runBuild",
+              "path": "ocrmnavigator.project.build",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "runStart",
+              "path": "ocrmnavigator.project.start",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "singlestrclean",
+              "path": "foreach ($path in @('.pnpm-cache','.pnpm-cache', 'node_modules', 'pnpm-lock.yaml', '.cache', 'public\\build', 'build')) { if (Test-Path $path) { Remove-Item -Path $path -Recurse -Force -ErrorAction SilentlyContinue } }",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "singlestrshadCN",
+              "path": "pnpm dlx shadcn@latest init",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "singlestrcomponent",
+              "path": "pnpm dlx shadcn@latest add",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "prismaGenerate",
+              "path": "ocrmnavigator.prisma.generate",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "prismaSeed",
+              "path": "ocrmnavigator.prisma.seed",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "prismaStudio",
+              "path": "ocrmnavigator.prisma.studio",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "singlestrfromScratch",
+              "path": "str fromScratch",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "terminalInstall",
+              "path": "ocrmnavigator.project.install",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "dbAllLocal",
+              "path": "ocrmnavigator.git.dbAllLocal",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "dbAllRemote",
+              "path": "ocrmnavigator.git.dbAllRemote",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "prismaMigrateReset",
+              "path": "ocrmnavigator.prisma.migrateReset",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "prismaReset",
+              "path": "ocrmnavigator.prisma.reset",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "prismaPush",
+              "path": "ocrmnavigator.prisma.push",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "singlestrdball",
+              "path": "npx tsx prisma/pre-seed.ts && npx prisma db push --force-reset && npx prisma db push && npx tsx prisma/seed.ts && npx prisma generate",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "singlestrpatch",
+              "path": "git add * && git commit -m \"Cleaning w/ push\" && git push && pnpm version patch && git push && git push --tags",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "singlestrdev",
+              "path": "pnpm run dev",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "generateroutes",
+              "path": "pnpm run generate:routes",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "methdbapp",
+              "path": "cd apps/app && npx tsx prisma/pre-seed.ts && npx prisma db push --force-reset && npx prisma db push && npx tsx prisma/seed.ts && npx prisma generate && cd ../..",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "killterms",
+              "path": "workbench.action.terminal.killAll",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "startDevServer",
+              "path": "ocrmnavigator.project.dev",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "saveall",
+              "path": "workbench.action.files.saveAll",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "runbuildthendev",
+              "path": "ocrmnavigator.project.build, ocrmnavigator.project.dev",
+              "type": "cmdChain",
+              "hidden": true
+            },
+            {
+              "label": "plusversion",
+              "path": "ocrmnavigator.git.add, ocrmnavigator.git.diffCached, ocrmnavigator.git.push, ocrmnavigator.version.patch, ocrmnavigator.git.push, ocrmnavigator.git.pushTags",
+              "type": "cmdChain",
+              "hidden": true
+            },
+            {
+              "label": "commitpush",
+              "path": "ocrmnavigator.git.add, ocrmnavigator.git.diffCached, ocrmnavigator.git.push",
+              "type": "cmdChain",
+              "hidden": true
+            },
+            {
+              "label": "closeeditors",
+              "path": "workbench.action.closeAllEditors",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "formatfile",
+              "path": "editor.action.formatDocument",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "patchAndPublishToNPM",
+              "type": "cmdChain",
+              "path": "ocrmnavigator.git.add, ocrmnavigator.git.diffCached, ocrmnavigator.git.push, ocrmnavigator.version.patch, ocrmnavigator.git.push, ocrmnavigator.git.pushTags",
+              "hidden": true
+            },
+            {
+              "label": "npmPublishWithToken",
+              "path": "ocrmnavigator.npm.publish",
+              "type": "command",
+              "hidden": true
+            },
+            {
+              "label": "hiddenUpdatePromptFrommd",
+              "path": "node ./src/autorun/update-prompt-from-md.js",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "pnpmrungenerateBaldr",
+              "path": "pnpm run generate",
+              "args": [
+                {
+                  "xPath": "F:/baldr"
+                }
+              ],
+              "type": "powershellCommand",
+              "icon": "versions",
+              "hidden": true
+            },
+            {
+              "label": "pnpmrunbuildBaldr",
+              "path": "pnpm run build",
+              "args": [
+                {
+                  "xPath": "F:/baldr"
+                }
+              ],
+              "type": "powershellCommand",
+              "icon": "versions",
+              "hidden": true
+            },
+            {
+              "label": "patchAndPublishToNPMBaldr",
+              "type": "cmdChain",
+              "path": "ocrmnavigator.git.add, ocrmnavigator.git.diffCached, ocrmnavigator.git.push, ocrmnavigator.version.patch, ocrmnavigator.git.push, ocrmnavigator.git.pushTags",
+              "args": [
+                {
+                  "xPath": "F:/baldr"
+                }
+              ],
+              "hidden": true
+            },
+            {
+              "label": "npmPublishWithTokenBaldr",
+              "path": "npm publish --//registry.npmjs.org/:_authToken=${NPM_TOKEN} --access public",
+              "args": [
+                {
+                  "xPath": "F:/baldr"
+                }
+              ],
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "hiddenUpdateicons",
+              "path": "pnpm update @a5gard/baldr",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "hiddengen3",
+              "path": "bun ./src/autorun/gen3.ts",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "hiddenGenerateiconlibrary",
+              "path": "node ./src/autorun/icon-library-inventory.js",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "hiddenGenerateiconsinv",
+              "path": "node ./src/autorun/generate-icon-inventory.js",
+              "type": "powershellCommand",
+              "hidden": true
+            },
+            {
+              "label": "╒ ╓ ╕ ╖ ╘ ╙ ╛ ╜ ╭ ╮ ╰ ╯ ┄ ┅ ┆ ┇ ┈ ┉ ┊ ┋ ▀ ▄ █ ░ ▒ ▓ ▌ ▐ ■ □ ▪ ▫ ● ○ ◆ ◇ ★ ☆ → ← ↑ ↓ ⇒ ⇐ • · … ― ‖ ← → ➔ ➜ ➞ ➡ ⇒ ⟹ ⬅ ⇐ ⟸ ⬆ ⇑ ⬇ ⇓ ↓↑",
+              "type": "label",
+              "icon": "three-bars",
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "UPDATERS",
+      "type": "folder",
+      "global": true,
+      "expanded": false,
+      "items": [
+        {
+          "label": "PROCESS FILE",
+          "type": "folder",
+          "global": true,
+          "expanded": true,
+          "items": [
+            {
+              "label": "PACKAGE.DEV.JSON: Build pkg.json",
+              "path": "ocrmnavigator.format.json.pkg",
+              "type": "command",
+              "icon": "json-baldr"
+            },
+            {
+              "label": "README.DEV.MD: MD Pre-Processor",
+              "path": "ocrmnavigator.md.convertReadme",
+              "type": "command",
+              "icon": "md-baldr"
+            },
+            {
+              "label": "MD: Update Prompt From md",
+              "path": "saveall, hiddenUpdatePromptFrommd",
+              "type": "chain",
+              "icon": "powershell-command-baldr"
+            }
+          ]
+        },
+        {
+          "label": "BASIC SINGLE COMMANDS",
+          "type": "folder",
+          "global": true,
+          "expanded": true,
+          "items": [
+            {
+              "label": "Commit And Push Current Dir",
+              "path": "saveall, commitpush",
+              "type": "chain",
+              "icon": "gitlab"
+            },
+            {
+              "label": "Bump Patch",
+              "path": "saveall, PatchVersion",
+              "type": "chain",
+              "icon": "gitlab"
+            },
+            {
+              "label": "MANUAL PUBLISH",
+              "path": "npmPublishWithToken",
+              "type": "chain",
+              "icon": "npm-task-baldr",
+              "tooltipText": ""
+            },
+            {
+              "label": "VSIX: Push archive",
+              "path": "ocrmnavigator.vsix.push",
+              "type": "command",
+              "icon": "vsix-baldr"
+            },
+            {
+              "label": "★ ━━━━ ☆ ━━━━ ARCHIVE ━━━━ ☆ ━━━━ ★",
+              "type": "label",
+              "icon": "chrome-minimize"
+            },
+            {
+              "label": "CVSIX",
+              "path": "ocrmnavigator.project.compile",
+              "type": "command",
+              "icon": "vsix-baldr"
+            },
+            {
+              "label": "VSCE",
+              "path": "ocrmnavigator.vsce.package",
+              "type": "command",
+              "icon": "vsix-baldr"
+            },
+            {
+              "label": "pro7",
+              "path": "ocrmnavigator.pro7.acrhive",
+              "type": "command",
+              "icon": "7zip-baldr"
+            }
+          ]
+        },
+        {
+          "label": "ONE CLICK BUILD & DEPLOY",
+          "type": "folder",
+          "global": true,
+          "expanded": true,
+          "items": [
+            {
+              "label": "BALDR",
+              "path": "saveall, pnpmrungenerate, pnpmrunbuild, patchAndPublishToNPM, npmPublishWithToken",
+              "type": "chain",
+              "icon": "pixel-2-link2",
+              "tooltipText": "One button does all to generate / build / update, compile, archive, push to github, push to npm "
+            },
+            {
+              "label": "DEVSTACK",
+              "path": "ocrmnavigator.git.order11",
+              "type": "command",
+              "icon": "pixel-2-link2",
+              "tooltipText": "One click build and deploy nuke"
+            },
+            {
+              "label": "MIÐGARÐR",
+              "path": "saveall, patchAndPublishToNPM",
+              "type": "chain",
+              "icon": "pixel-2-link2",
+              "tooltipText": "One button does all to generate / build / update, compile, archive, push to github, push to npm "
+            },
+            {
+              "label": "YGGDRASIL",
+              "path": "saveall, pnpmrunbuild, patchAndPublishToNPM, npmPublishWithToken",
+              "type": "chain",
+              "icon": "pixel-2-link2",
+              "tooltipText": "One button does all to generate / build / update, compile, archive, push to github, push to npm "
+            }
+          ]
+        },
+        {
+          "label": "EXECUTING OUTSIDE ITS PROJECT FROM ANOTHER",
+          "type": "folder",
+          "global": true,
+          "expanded": true,
+          "items": [
+            {
+              "label": "BALDR - executing outside icons project",
+              "path": "saveall, pnpmrungenerateBaldr, pnpmrunbuildBaldr, patchAndPublishToNPMBaldr, npmPublishWithTokenBaldr",
+              "type": "chain",
+              "icon": "pixel-2-link2",
+              "tooltipText": "One button does all to generate / build / update, compile, archive, push to github, push to npm "
+            }
+          ]
+        },
+        {
+          "label": "UPDATING ITEMS",
+          "type": "folder",
+          "global": true,
+          "expanded": true,
+          "items": [
+            {
+              "label": "Update icons via pwrshell",
+              "path": "ocrmnavigator.icons.update.project",
+              "type": "command",
+              "icon": "pixel-2-link2"
+            },
+            {
+              "label": "MIÐGARÐR: gen3",
+              "path": "saveall, hiddengen3",
+              "type": "chain",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "DEVSTACK: Generate pkg.json cmds for quickpick menu items",
+              "path": "ocrmnavigator.menu.items.pkg.scan.convert.items",
+              "type": "command",
+              "icon": "three-bars"
+            },
+            {
+              "label": "DEVSTACK: Generate icons inventory",
+              "path": "saveall, hiddenGenerateiconsinv",
+              "type": "chain",
+              "icon": "powershell-command-baldr"
+            },
+            {
+              "label": "DEVSTACK: Generate icon library items for devstack functions",
+              "path": "saveall, hiddenGenerateiconlibrary",
+              "type": "chain",
+              "icon": "powershell-command-baldr"
+            }
+          ]
+        },
+        {
+          "label": "EXECUTE ORDER 66",
+          "type": "folder",
+          "global": true,
+          "expanded": false,
+          "items": [
+            {
+              "label": "★ ━━━━ ☆ ━━━━ EXECUTE ORDER ━━━━ ☆ ━━━━ ★",
+              "type": "label",
+              "icon": "chrome-minimize"
+            },
+            {
+              "label": "PkgJson+ → MDPP+ → CVSIX+ → INS",
+              "path": "ocrmnavigator.git.order1",
+              "type": "command",
+              "icon": "versions",
+              "tooltipText": "Build pkg.json → md pre-processer → build custom vsix → install"
+            },
+            {
+              "label": "Order 1",
+              "path": "ocrmnavigator.git.order1",
+              "type": "command",
+              "icon": "symbol-event",
+              "tooltipText": "saveAll → pkg.dev.json → pkg.jsn → MD Pre-Proc → compile → +cvsix → install → R"
+            },
+            {
+              "label": "Order 2",
+              "path": "ocrmnavigator.git.order2",
+              "type": "command",
+              "icon": "symbol-event",
+              "tooltipText": "order 1 → autorun"
+            },
+            {
+              "label": "Order 3",
+              "path": "ocrmnavigator.git.order3",
+              "type": "command",
+              "icon": "symbol-event",
+              "tooltipText": "order 2 → updates all"
+            },
+            {
+              "label": "Order 4",
+              "path": "ocrmnavigator.git.order4",
+              "type": "command",
+              "icon": "symbol-event",
+              "tooltipText": "order 2 → bump patch → build all projects → send vsix to marketplace"
+            },
+            {
+              "label": "Order 5",
+              "path": "ocrmnavigator.git.order5",
+              "type": "command",
+              "icon": "symbol-event",
+              "tooltipText": "bum patch → md pre-processor → convert pkg.json → compile and archive → send vsix to marketplace"
+            },
+            {
+              "label": "Order 6",
+              "path": "ocrmnavigator.git.order6",
+              "type": "command",
+              "icon": "symbol-event",
+              "tooltipText": "order 1 → autorun"
+            },
+            {
+              "label": "Order 7",
+              "path": "ocrmnavigator.git.order7",
+              "type": "command",
+              "icon": "symbol-event",
+              "tooltipText": "order 1 → autorun"
+            },
+            {
+              "label": "Order 8",
+              "path": "ocrmnavigator.git.order8",
+              "type": "command",
+              "icon": "symbol-event",
+              "tooltipText": "order 1 → autorun"
+            },
+            {
+              "label": "Order 9",
+              "path": "ocrmnavigator.git.order9",
+              "type": "command",
+              "icon": "symbol-event",
+              "tooltipText": "order 1 → autorun"
+            },
+            {
+              "label": "Order 10",
+              "path": "ocrmnavigator.git.order10",
+              "type": "command",
+              "icon": "symbol-event",
+              "tooltipText": "order 1 → autorun"
+            },
+            {
+              "label": "Order 11",
+              "path": "ocrmnavigator.git.order11",
+              "type": "command",
+              "icon": "symbol-event",
+              "tooltipText": "compile → archive → push and patch → install vsix → push via rest api → save → reload window"
+            }
+          ]
+        },
+        {
+          "label": "FULL AUTO",
+          "type": "folder",
+          "global": true,
+          "expanded": false,
+          "items": [
+            {
+              "label": "★ ━━━━ ☆ ━━━━  ━━━━ ☆ ━━━━ ★",
+              "type": "label",
+              "icon": "chrome-minimize"
+            },
+            {
+              "label": "autorun.exe",
+              "path": "ocrmnavigator.autorun.trigger",
+              "type": "command",
+              "icon": "folder"
+            },
+            {
+              "label": "updaters.exe",
+              "path": "ocrmnavigator.autorun.updaters",
+              "type": "command",
+              "icon": "folder"
+            },
+            {
+              "label": "Build All Extras",
+              "path": "gen2tsU, BuildCatalystFunctionsU, MDPreProcessor, pro7, CopyAndRenameFilesps1U, generateiconinventoryjsU, generateuiinventoryjsU, iconlibraryinventoryjsU, updatepromptfrommdU, Buildpkgjson, CreatekgJsonCommandsQpMenu",
+              "type": "chain",
+              "icon": "folder",
+              "tooltipText": "MD Pre-Processor → Build pkg json → update prompt from md → icon library inventory js → generate ui inventory js → Copy And Rename Files ps1 → pro7 → Build Catalyst Functions → gen2 → Create Pkg Json Commands QpMenu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "SETTINGS",
+      "expanded": false,
+      "type": "folder",
+      "global": true,
+      "icon": "pixel-cog-solid",
+      "items": [
+        {
+          "label": "Tasks",
+          "path": "ocrmnavigator.devstack.tasks",
+          "type": "settingsToggle",
+          "icon": "pixel-cog-solid"
+        },
+        {
+          "label": "NPM Scripts",
+          "path": "ocrmnavigator.devstack.npmScripts",
+          "type": "settingsToggle",
+          "icon": "npm-bladr"
+        },
+        {
+          "label": "ARCHIVER",
+          "path": "ocrmnavigator.ARCHIVER",
+          "type": "settingsToggle",
+          "args": [
+            "custom",
+            "vsce"
+          ],
+          "icon": "vsix-baldr"
+        },
+        {
+          "label": "UPDATE_PROMPT_OBJECTS",
+          "path": "ocrmnavigator.UPDATE_PROMPT_OBJECTS",
+          "type": "settingsToggle",
+          "icon": "md-baldr"
+        },
+        {
+          "label": "AUTORUN_SCRIPTS",
+          "path": "ocrmnavigator.AUTORUN_SCRIPTS",
+          "type": "settingsToggle",
+          "icon": "pixel-play-solid"
+        },
+        {
+          "label": "CONVERT_README_DEV_MD",
+          "path": "ocrmnavigator.CONVERT_README_DEV_MD",
+          "type": "settingsToggle",
+          "icon": "md-baldr"
+        },
+        {
+          "label": "PRO7",
+          "path": "ocrmnavigator.PRO7",
+          "type": "settingsToggle",
+          "icon": "7zip-baldr"
+        },
+        {
+          "label": "DELETE_OLD_VSIX",
+          "path": "ocrmnavigator.DELETE_OLD_VSIX",
+          "type": "settingsToggle",
+          "icon": "vsix-baldr"
+        },
+        {
+          "label": "AUTO_INSTALL_VSIX",
+          "path": "ocrmnavigator.AUTO_INSTALL_VSIX",
+          "type": "settingsToggle",
+          "icon": "vsix-baldr"
+        },
+        {
+          "label": "OPEN_PUB_DASH",
+          "path": "ocrmnavigator.OPEN_PUB_DASH",
+          "type": "settingsToggle",
+          "icon": "pixel-cog-solid"
+        },
+        {
+          "label": "RELOAD_INSTANCE",
+          "path": "ocrmnavigator.RELOAD_INSTANCE",
+          "type": "settingsToggle",
+          "icon": "pixel-refresh-solid"
+        },
+        {
+          "label": "AUTO_FOLD_PKG",
+          "path": "ocrmnavigator.AUTO_FOLD_PKG",
+          "type": "settingsToggle",
+          "icon": "pixel-cog-solid"
+        },
+        {
+          "label": "BE_QP",
+          "path": "ocrmnavigator.devstack.be",
+          "type": "settingsToggle",
+          "icon": "pixel-heart-solid"
+        }
+      ]
+    },
+    {
+      "label": "FILES",
+      "type": "folder",
+      "expanded": false,
+      "global": true,
+      "icon": "file",
+      "items": [
+        {
+          "label": "CONFIGS",
+          "expanded": false,
+          "type": "folder",
+          "global": true,
+          "icon": "gear",
+          "items": [
+            {
+              "label": "global-navigator-config backup",
+              "path": "F:\\devstackBackUp\\global-navigator-config.json",
+              "type": "file",
+              "icon": "pixel-cog-solid",
+              "tooltipText": ""
+            },
+            {
+              "label": "global-navigator-config USER",
+              "path": "C:\\Users\\skyle\\AppData\\Roaming\\Code - Insiders\\User\\globalStorage\\skyler.ocrmnav\\global-navigator-config.json",
+              "type": "file",
+              "icon": "pixel-cog-solid",
+              "tooltipText": ""
+            },
+            {
+              "label": "DevStack WS Config",
+              "path": "C:\\Users\\skyle\\AppData\\Roaming\\Code - Insiders\\User\\globalStorage\\skyler.ocrmnav\\project-configs\\project-1744496862041-y866zpqtd9.json",
+              "type": "file",
+              "icon": "pixel-cog-solid",
+              "tooltipText": ""
+            },
+            {
+              "label": "midgardr WS Config",
+              "path": "C:\\Users\\skyle\\AppData\\Roaming\\Code - Insiders\\User\\globalStorage\\skyler.ocrmnav\\project-configs\\project-1757010936487-i30yr98a4p7.json",
+              "type": "file",
+              "icon": "pixel-cog-solid",
+              "tooltipText": ""
+            }
+          ]
+        },
+        {
+          "label": "README.dev.md",
+          "path": "README.dev.md",
+          "type": "file",
+          "icon": "md-baldr"
+        },
+        {
+          "label": "README.md",
+          "path": "README.md",
+          "type": "file",
+          "icon": "md-baldr"
+        },
+        {
+          "label": "package.dev.jsonc",
+          "path": "package.dev.jsonc",
+          "type": "file",
+          "icon": "json-baldr"
+        },
+        {
+          "label": "package.json",
+          "path": "package.json",
+          "type": "file",
+          "icon": "json-baldr"
+        },
+        {
+          "label": "prisma.schema",
+          "path": "prisma/prisma.schema",
+          "type": "file",
+          "icon": "prisma-baldr"
+        },
+        {
+          "label": "seed.ts",
+          "path": "prisma/seed.ts",
+          "type": "file",
+          "icon": "prisma-baldr"
+        },
+        {
+          "label": "seed.ts",
+          "path": "prisma/seed.ts:425",
+          "type": "fileAtLine",
+          "icon": "prisma-baldr"
+        }
+      ]
+    },
+    {
+      "label": "PROMPT",
+      "expanded": false,
+      "type": "folder",
+      "global": true,
+      "icon": "md-baldr",
+      "items": [
+        {
+          "label": "Prompt - Reusable Comps",
+          "path": "",
+          "type": "copyValue",
+          "icon": "md-baldr"
+        },
+        {
+          "label": "Prompt - Templates",
+          "path": "",
+          "type": "copyValue",
+          "icon": "md-baldr"
+        },
+        {
+          "label": "Prompt - UI Lib Objs",
+          "path": "",
+          "type": "copyValue",
+          "icon": "md-baldr"
+        },
+        {
+          "label": "Prompt - Blocks",
+          "path": "",
+          "type": "copyValue",
+          "icon": "md-baldr"
+        },
+        {
+          "label": "Prompt - VSCode Extension",
+          "path": "",
+          "type": "copyValue",
+          "icon": "md-baldr"
+        },
+        {
+          "label": "Prompt - Remix-Run",
+          "path": "",
+          "type": "copyValue",
+          "icon": "md-baldr"
+        },
+        {
+          "label": "Prompt - Default",
+          "path": "",
+          "type": "copyValue",
+          "icon": "md-baldr"
+        }
+      ]
+    },
+    {
+      "label": "OTHER",
+      "expanded": false,
+      "type": "folder",
+      "global": true,
+      "items": [
+        {
+          "label": "Manage VS Extensions",
+          "path": "https://marketplace.visualstudio.com/manage/publishers/skyler?auth_redirect=True",
+          "type": "url",
+          "icon": "link-external"
+        },
+        {
+          "label": "VLC w/ playlist",
+          "path": "cd /mnt/f/music && '/mnt/c/Program Files/VideoLAN/VLC/vlc.exe' 1Firreee.xspf",
+          "type": "debianCMD",
+          "icon": "terminal-debian"
+        },
+        {
+          "label": "PGAdmin",
+          "path": "& \"c:/Program Files/PostgreSQL/16/pgAdmin 4/runtime/pgAdmin4.exe\"",
+          "type": "powershellCommand",
+          "icon": "powershell-command-baldr"
+        },
+        {
+          "label": "PWSH - Admin",
+          "path": "Start-Process powershell -Verb RunAs",
+          "type": "powershellCommand",
+          "icon": "powershell-command-baldr"
+        },
+        {
+          "label": "Libre - Draw",
+          "path": "& \"c:/Program Files/LibreOffice/program/sdraw.exe\"",
+          "type": "powershellCommand",
+          "icon": "powershell-command-baldr"
+        },
+        {
+          "label": "🌐 Mixes",
+          "path": "https://www.youtube.com/watch?v=KuvaMUDaS-4&list=PLYHhlbShmci2VzDsrtVwMIEx1vBYVk6bj&index=1",
+          "type": "url",
+          "icon": "link-external"
+        },
+        {
+          "label": "shad",
+          "path": "https://ui.shadcn.com/docs/components/accordion",
+          "type": "url",
+          "icon": "link-external"
+        },
+        {
+          "label": "shad github examples",
+          "path": "https://github.com/shadcn-ui/ui/tree/main/apps/www/app/(app)/examples",
+          "type": "url",
+          "icon": "link-external"
+        },
+        {
+          "label": "lucide",
+          "path": "https://lucide.dev/icons/",
+          "type": "url",
+          "icon": "link-external"
+        },
+        {
+          "label": "vercel",
+          "path": "https://vercel.com/eights-projects",
+          "type": "url",
+          "icon": "link-external"
+        },
+        {
+          "label": "radix",
+          "path": "https://www.radix-ui.com/primitives/docs/components/dialog",
+          "type": "url",
+          "icon": "link-external"
+        },
+        {
+          "label": "gmail",
+          "path": "https://mail.google.com/mail/u/0/#all",
+          "type": "url",
+          "filePath": "https://mail.google.com/mail/u/0/#all",
+          "icon": "link-external"
+        }
+      ]
+    },
+    {
+      "label": "LAYOUT",
+      "expanded": true,
+      "type": "folder",
+      "global": false,
+      "items": [
+        {
+          "label": "DevStack Default",
+          "path": "",
+          "type": "layout",
+          "icon": "editor-layout",
+          "args": [
+            {
+              "editorGrid": {
+                "orientation": 0,
+                "version": "classic",
+                "editorFocus": "last",
+                "groups": [
+                  {
+                    "size": 0.5
+                  },
+                  {
+                    "size": 0.5
+                  }
+                ],
+                "files": [
+                  {
+                    "group": 1,
+                    "pinned": true,
+                    "foldLevel": [
+                      1,
+                      2
+                    ],
+                    "path": [
+                      "src/helpers/atlas.ts",
+                      "src\\helpers\\odin-explorer.ts"
+                    ]
+                  },
+                  {
+                    "group": 2,
+                    "pinned": true,
+                    "foldLevel": [
+                      1,
+                      2
+                    ],
+                    "path": [
+                      "src\\helpers\\utils.ts",
+                      "src\\helpers\\bifrost.ts",
+                      "src\\helpers\\devstack.ts",
+                      "src\\helpers\\HeimdallrProvider.ts",
+                      "package.dev.jsonc",
+                      "src/extension.ts",
+                      "src/helpers/master.ts",
+                      "F:/DevStack/docs/BROKKR.md",
+                      "C:/Users/skyle/AppData/Roaming/Code - Insiders/User/globalStorage/skyler.ocrmnav/project-configs/project-1744496862041-y866zpqtd9.json",
+                      "src\\context.ts"
+                    ]
+                  }
+                ]
+              },
+              "commandPalette": [
+                {
+                  "label": "Unfold All",
+                  "cmd": "editor.unfoldAll"
+                },
+                {
+                  "label": "ocrmnavigator.format.json.pkg",
+                  "cmd": "ocrmnavigator.format.json.pkg"
+                },
+                {
+                  "label": "Compile, Custom .vsix Archiver & Install",
+                  "cmd": "ocrmnavigator.vsix.archive"
+                },
+                {
+                  "label": "ocrmnavigator.vscode.RWINDOW",
+                  "cmd": "ocrmnavigator.vscode.RWINDOW"
+                },
+                {
+                  "label": "Toggle ZEN Mode",
+                  "cmd": "ocrmnavigator.brokkr.zenMode.toggle"
+                }
+              ],
+              "extensions": {
+                "skyler.ocrmnav": "enabled",
+                "yzhang.markdown-all-in-one": "enabled",
+                "mblode.pretty-formatter": "enabled",
+                "esbenp.prettier-vscode": "enabled",
+                "Prisma.prisma": "enabled",
+                "GitHub.copilot-chat": "disabled",
+                "keyshout.sqlite-db-viewer": "disabled",
+                "yy0931.vscode-sqlite3-editor": "disabled",
+                "AMiner.codegeex": "disabled",
+                "NoThlnG.vscode-open-wsl": "disabled",
+                "ban.spellright": "disabled",
+                "tomoki1207.pdf": "enabled",
+                "ms-vscode-remote.remote-wsl": "enabled"
+              },
+              "default": true,
+              "fileIconTheme": "baldr-icons",
+              "productIconTheme": "baldr-icons",
+              "theme": "Deep-Void-Base",
+              "terminalGrid": {},
+              "keybindings": {
+                "workbench.action.files.saveAll": "ctrl+s",
+                "ocrmnavigator.devstack.commandPalette": "alt+p",
+                "ocrmnavigator.menu.devstack": "alt+d",
+                "ocrmnavigator.odin.open": "alt+s",
+                "ocrmnavigator.menu.icons": "alt+i",
+                "ocrmnavigator.menu.catalystUi": "alt+u",
+                "ocrmnavigator.menu.snippets": "alt+f",
+                "ocrmnavigator.region.insert": "alt+r",
+                "ocrmnavigator.endregion.insert": "alt+e",
+                "ocrmnavigator.region.wrap": "alt+w",
+                "ocrmnavigator.devstack.site.colorWheel": "alt+q",
+                "ocrmnavigator.clipboardMgr.history.show": "alt+h",
+                "ocrmnavigator.bookmarks.show": "alt+b",
+                "ocrmnavigator.menu.github": "alt+g",
+                "ocrmnavigator.project.pkg.open": "alt+j",
+                "ocrmnavigator.project.readme.open": "alt+m"
+              },
+              "customizeLayout": {
+                "workbench.startupEditor": "none",
+                "workbench.notifications.position": "top-right",
+                "explorer.decorations.colors": false,
+                "problems.decorations.enabled": false,
+                "window.menuBarVisibility": "toggle",
+                "window.commandCenter": false,
+                "menubar.layoutControls": false,
+                "editor.renderControlCharacters": false,
+                "editor.renderWhitespace": "none",
+                "editor.minimap.enabled": true,
+                "breadcrumbs.enabled": false,
+                "workbench.sideBar.location": "left",
+                "workbench.statusBar.visible": false,
+                "workbench.layoutControl.enabled": false,
+                "workbench.secondarySideBar.showLabels": false,
+                "workbench.navigationControl.enabled": false,
+                "workbench.editor.showTabs": "multiple",
+                "menubar.navigationControls": false,
+                "menubar.share": false,
+                "primarySidebar.display": true,
+                "secondarySidebar.display": true,
+                "panel.display": false,
+                "panel.alignment": "center",
+                "panel.view": "output",
+                "modes.centeredLayout": false,
+                "modes.fullScreen": false,
+                "modes.zenMode": false,
+                "window.zoomLevel": -1,
+                "editor.glyphMargin": true,
+                "editor.folding": true,
+                "editor.lineNumbers": "relative",
+                "editor.showFoldingControls": "always",
+                "editor.minimap.maxColumn": 30,
+                "editor.minimap.showRegionSectionHeaders": true,
+                "editor.minimap.showMarkSectionHeaders": false,
+                "editor.minimap.autohide": "mouseover",
+                "editor.minimap.showSlider": "mouseover",
+                "editor.minimap.side": "left",
+                "editor.minimap.size": "fill",
+                "editor.minimap.renderCharacters": false,
+                "editor.wordWrap": "on",
+                "editor.fontFamily": "Geist Mono",
+                "editor.fontLigatures": true,
+                "editor.fontVariations": true,
+                "workbench.editor.pinnedTabsOnSeparateRow": true,
+                "workbench.editor.alwaysShowEditorActions": true,
+                "workbench.editor.enablePreviewFromQuickOpen": false,
+                "workbench.editor.wrapTabs": true,
+                "workbench.externalBrowser": "Chrome",
+                "workbench.remoteIndicator.showExtensionRecommendations": false,
+                "workbench.commandPalette.history": 30,
+                "window.restoreWindows": "one",
+                "workbench.editor.autoLockGroups": true,
+                "workbench.panel.showLabels": false,
+                "editor.foldingImportsByDefault": false,
+                "git.diffEditor.renderGutterMenu": false,
+                "git.decorations.enabled": false,
+                "editor.scrollBeyondLastLine": false,
+                "terminal.integrated.fontSize": 12,
+                "editor.fontSize": 12,
+                "scm.diffDecorationsGutterAction": "none",
+                "scm.diffDecorations": "none",
+                "workbench.iconTheme": "baldr-icons",
+                "workbench.activityBar.location": "default",
+                "workbench.editor.decorations.colors": false,
+                "window.newWindowDimensions": "inherit",
+                "workbench.editor.highlightModifiedTabs": false,
+                "markdown.preview.scrollPreviewWithEditor": false,
+                "markdown.preview.scrollEditorWithPreview": false
+              },
+              "devstack": {
+                "ocrmnavigator.devstack.icons": true,
+                "ocrmnavigator.devstack.snapshotNgin": true,
+                "ocrmnavigator.devstack.ivaldi": true,
+                "ocrmnavigator.devstack.devstack": true,
+                "ocrmnavigator.devstack.odin": true,
+                "ocrmnavigator.devstack.formatters": true,
+                "ocrmnavigator.devstack.titlebar.search": true,
+                "ocrmnavigator.devstack.titlebar.refresh": true,
+                "ocrmnavigator.devstack.titlebar.config": true,
+                "ocrmnavigator.devstack.titlebar.ui": true,
+                "ocrmnavigator.baldr.icons": true,
+                "ocrmnavigator.odin.settings.exlcude.default": "",
+                "ocrmnavigator.odin.contextLinesBefore": 4,
+                "ocrmnavigator.odin.contextLinesAfter": 10,
+                "ocrmnavigator.odin.query": "",
+                "ocrmnavigator.other": "Ch3w8acca66",
+                "ocrmnavigator.odin.replace": "",
+                "ocrmnavigator.odin.includePattern": "",
+                "ocrmnavigator.odin.excludePattern": "",
+                "ocrmnavigator.odin.useRegex": false,
+                "ocrmnavigator.odin.caseSensitive": false,
+                "ocrmnavigator.odin.matchWholeWord": false,
+                "ocrmnavigator.odin.useFuzzy": false,
+                "ocrmnavigator.odin.searchInOpenEditorsOnly": false,
+                "ocrmnavigator.odin.useExcludeSettings": false,
+                "ocrmnavigator.odin.includeEnabled": false,
+                "ocrmnavigator.odin.excludeEnabled": false,
+                "ocrmnavigator.odin.searchScope": "workspace",
+                "ocrmnavigator.vfs.onFileOpen": "openInSetCol",
+                "ocrmnavigator.vfs.targetEditorGroup": 1,
+                "ocrmnavigator.codesnap.windowControlStyle": "Windows",
+                "ocrmnavigator.codesnap.showWindowTitle": true,
+                "ocrmnavigator.codesnap.windowBorderRadius": "8px",
+                "ocrmnavigator.codesnap.windowTitleStyle": "Filename",
+                "ocrmnavigator.codesnap.showLineNumbers": true,
+                "ocrmnavigator.codesnap.realLineNumbers": false,
+                "ocrmnavigator.codesnap.transparentBackground": false,
+                "ocrmnavigator.codesnap.trimEmptyLines": false,
+                "ocrmnavigator.vfs.AUTO_FOLD_PKGJSON_2": false,
+                "ocrmnavigator.vfs.AUTO_FOLD_PKGJSON_2_3": true,
+                "ocrmnavigator.vfs.AUTO_FOLD_1": false,
+                "ocrmnavigator.vfs.AUTO_FOLD_1_2": true,
+                "ocrmnavigator.devstack.tasks": true,
+                "ocrmnavigator.devstack.npmScripts": true,
+                "ocrmnavigator.devstack.snippets": true,
+                "ocrmnavigator.devstack.be": true,
+                "ocrmnavigator.AUTORUN_DIR": "src",
+                "ocrmnavigator.UPDATE_PROMPT_OBJECTS": false,
+                "ocrmnavigator.AUTORUN_SCRIPTS": true,
+                "ocrmnavigator.CONVERT_README_DEV_MD": false,
+                "ocrmnavigator.PRO7": false,
+                "ocrmnavigator.CONCURRENT": "bleeding-edge",
+                "ocrmnavigator.ARCHIVER": "custom",
+                "ocrmnavigator.DELETE_OLD_VSIX": true,
+                "ocrmnavigator.AUTO_INSTALL_VSIX": true,
+                "ocrmnavigator.OPEN_PUB_DASH": true,
+                "ocrmnavigator.RELOAD_INSTANCE": true,
+                "ocrmnavigator.todo.isPriv": false,
+                "ocrmnavigator.todo.checkRemindersInterval": "10",
+                "ocrmnavigator.todo.syncInterval": "20",
+                "ocrmnavigator.todo.syncOnSave": true,
+                "ocrmnavigator.todo.owner": "8an3",
+                "ocrmnavigator.todo.branch": "main",
+                "ocrmnavigator.runar.repository": "https://github.com/8an3/mynotesrepo.git",
+                "ocrmnavigator.todo.repo": "mynotesrepo",
+                "ocrmnavigator.todo.repository": "8an3/mynotesrepo",
+                "ocrmnavigator.runar.repo": "runardb",
+                "ocrmnavigator.runar.owner": "8an3",
+                "ocrmnavigator.runar.branch": "main",
+                "ocrmnavigator.devstack.item.hidden.toggle": true,
+                "ocrmnavigator.strPrismaUpdater": true,
+                "ocrmnavigator.commands": true,
+                "ocrmnavigator.vscodecmdref": true,
+                "ocrmnavigator.markdownViewer": true,
+                "ocrmnavigator.snippetsInEditor": true,
+                "ocrmnavigator.editorContextSnippets": true,
+                "ocrmnavigator.formatters": true,
+                "ocrmnavigator.trailingCommas": true,
+                "ocrmnavigator.batchRename": true,
+                "ocrmnavigator.eslintPrettier": true,
+                "ocrmnavigator.remixUtils": true,
+                "ocrmnavigator.theme": true,
+                "ocrmnavigator.vscode.theme.blacked": true,
+                "ocrmnavigator.vscode.theme.window.differentiator": true,
+                "ocrmnavigator.shadCNComponents": true,
+                "ocrmnavigator.repoMgr": true,
+                "ocrmnavigator.openGithub": true,
+                "ocrmnavigator.githubFunctions": true,
+                "ocrmnavigator.prismaFunctions": true,
+                "ocrmnavigator.remixComponents": true,
+                "ocrmnavigator.clickToSchema": true,
+                "ocrmnavigator.crudResolvers": true,
+                "ocrmnavigator.fileNesting": true,
+                "ocrmnavigator.revealExplorer": true,
+                "ocrmnavigator.devstack.item.path.copy": true,
+                "ocrmnavigator.bookmarks": true,
+                "ocrmnavigator.searchBar": true,
+                "ocrmnavigator.clipBoardHistory": true,
+                "ocrmnavigator.lucideIcons": true,
+                "ocrmnavigator.share": true,
+                "ocrmnavigator.url": true,
+                "ocrmnavigator.format.json.remove.comments.file": true,
+                "ocrmnavigator.con": true,
+                "ocrmnavigator.format.remove.comments.file": true,
+                "ocrmnavigator.unusedFunctions": true,
+                "ocrmnavigator.viewers": true,
+                "ocrmnavigator.uiDashboard": true,
+                "ocrmnavigator.devStackFunctions": true,
+                "ocrmnavigator.devstack.site.md.render": true,
+                "ocrmnavigator.project.index.smart.create": true,
+                "ocrmnavigator.devstack.site.tailwindConverter": true,
+                "ocrmnavigator.remix.project2agnostic.convert": true
+              },
+              "performance": {
+                "explorer.fileNesting.patterns": {
+                  ".agent": ".agent, .claude, .cline, .codebuddy, .codex, .commandcode, .continue, .crush, .cursor, .factory, .gemini, .goose, .junie, .kilocode, .kiro, .kode, .mcpjam, .mux, .neovate, .opencode, .openhands, .pi, .pochi, .qoder, .qwen, .roo, .trae, .windsurf, .zencoder",
+                  ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
+                  "config.asgard": "config.bifrost, vsix.asgard",
+                  ".env": "*.env, .env.*, .envrc, env.d.ts, .gitignore, .pro7, .fantasticonrc.js  ",
+                  "vulknut.svg": "clipboardcheck.svg, code.png, code.svg, snippets.jsonc, global-navigator-config.json, project-config.json, project-1744496862041-y866zpqtd9.jsonc, navigator-workspace.json, ghost.svg, pixel-2-alarm.svg, pixel-2-arrest.svg, pixel-2-bookmark2.svg, pixel-2-prank.svg, pixel-product-management.svg,pixel-robot.svg, pixel-search.svg, pixel-themes.svg, pixel-window-close-solid.svg, pixel-writing.svg, valhalla-baldr.svg, valhalla-baldr.svg, file-baldr.svg, snippets.svg, odin.png, odin8.png, pixel-2-code2.svg, calc.svg, check-box.svg, clipboard.svg, doc.svg, files.svg, h1.svg, h2.svg, h3.svg, pen.svg, pixel-file2.svg, pixel-github.svg, play.svg, robot.svg, search.svg, search2.svg, terminal.svg, valueInspector.svg, vscode-command-baldr.svg    ",
+                  ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .lfsconfig, .mailmap, .git-blame*",
+                  ".project": ".classpath",
+                  "+layout.svelte": "+layout.ts,+layout.js,+layout.server.ts,+layout.server.js,+layout.gql",
+                  "+page.svelte": "+page.server.ts,+page.server.js,+page.ts,+page.js,+page.gql",
+                  "AGENTS.md": ".clinerules, .cursorrules, .replit.md, .windsurfrules, AGENT.md, CLAUDE.local.md, CLAUDE.md, GEMINI.md",
+                  "ansible.cfg": "ansible.cfg, .ansible-lint, requirements.yml",
+                  "app.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "application.properties": "*.properties",
+                  "artisan": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, server.php, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, webpack.mix.js, windi.config.*",
+                  "astro.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "build-wrapper.log": "build-wrapper*.log, build-wrapper-dump*.json, build-wrapper-win*.exe, build-wrapper-linux*, build-wrapper-macosx*",
+                  "BUILD.bazel": "*.bzl, *.bazel, *.bazelrc, bazel.rc, .bazelignore, .bazelproject, .bazelversion, MODULE.bazel.lock, WORKSPACE",
+                  "Cargo.toml": ".clippy.toml, .rustfmt.toml, Cargo.Bazel.lock, Cargo.lock, clippy.toml, cross.toml, insta.yaml, rust-toolchain.toml, rustfmt.toml",
+                  "CMakeLists.txt": "*.cmake, *.cmake.in, .cmake-format.yaml, CMakePresets.json, CMakeCache.txt",
+                  "composer.json": ".php*.cache, composer.lock, phpunit.xml*, psalm*.xml",
+                  "default.nix": "shell.nix",
+                  "deno.json*": "*.env, .env.*, .envrc, api-extractor.json, deno.lock, env.d.ts, import-map.json, import_map.json, jsconfig.*, tsconfig.*, tsdoc.*",
+                  "Dockerfile": "*.dockerfile, .devcontainer.*, .dockerignore, captain-definition, compose.*, docker-compose.*, dockerfile*",
+                  "flake.nix": "default.nix, shell.nix, flake.lock",
+                  "gatsby-config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, gatsby-browser.*, gatsby-node.*, gatsby-ssr.*, gatsby-transformer.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "gemfile": ".ruby-version, gemfile.lock",
+                  "go.mod": ".air*, go.sum",
+                  "go.work": "go.work.sum",
+                  "hatch.toml": ".editorconfig, .flake8, .isort.cfg, .python-version, hatch.toml, requirements*.in, requirements*.pip, requirements*.txt, tox.ini",
+                  "I*.cs": "$(capture).cs",
+                  "Makefile": "*.mk",
+                  "mix.exs": ".credo.exs, .dialyzer_ignore.exs, .formatter.exs, .iex.exs, .tool-versions, mix.lock",
+                  "next.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, next-env.d.ts, next-i18next.config.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "nuxt.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .nuxtignore, .nuxtrc, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "package.json": "*.code-workspace, .browserslist*, .circleci*, .commitlint*, .cspell*, .cursor*, .cz-config.js, .czrc, .dlint.json, .dprint.json*, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitmojirc.json, .gitpod*, .huskyrc*, .jslint*, .knip.*, .lintstagedrc*, .ls-lint.yml, .markdownlint*, .node-version, .nodemon*, .npm*, .nvmrc, .oxfmtrc.json, .oxfmtrc.json.bak, .oxfmtrc.jsonc, .oxlintrc.json, .oxlintrc.json.bak, .oxlintrc.jsonc, .pm2*, .pnp.*, .pnpm*, .prettier*, .pylintrc, .release-please*.json, .releaserc*, .ruff.toml, .sentry*, .shellcheckrc, .simple-git-hooks*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .versionrc*, .vscode*, .watchman*, .windsurfrules, .xo-config*, .yamllint*, .yarnrc*, Procfile, alejandra.toml, apollo.config.*, appveyor*, azure-pipelines*, biome.json*, bower.json, build.config.*, bun.lock, bun.lockb, bunfig.toml, colada.options.ts, commitlint*, crowdin*, cspell*, cz.config.*, dangerfile*, dlint.json, dprint.json*, ec.config.*, electron-builder.*, eslint*, firebase.json, grunt*, gulp*, jenkins*, knip.*, lefthook.*, lerna*, lint-staged*, nest-cli.*, netlify*, nixpacks*, nodemon*, npm-shrinkwrap.json, nx.*, oxlint.config.*, package-lock.json, package.nls*.json, phpcs.xml, pm2.*, pnpm*, prettier*, pullapprove*, pyrightconfig.json, release-please*.json, release-tasks.sh, release.config.*, renovate*, rolldown.config.*, rollup.config.*, rspack*, ruff.toml, sentry.*.config.ts, simple-git-hooks*, sonar-project.properties, stylelint*, taze.config.*, tsdown.config.*, tslint*, tsup.config.*, turbo*, typedoc*, unlighthouse*, vercel*, vetur.config.*, webpack*, workspace.json, wrangler.*, xo.config.*, yarn*, tsconfig.json, tasks.json, svgtofont.config.js, project-1769079687326-9m4anfwt9.json",
+                  "Pipfile": ".editorconfig, .flake8, .isort.cfg, .python-version, Pipfile, Pipfile.lock, requirements*.in, requirements*.pip, requirements*.txt, tox.ini",
+                  "pom.xml": "mvnw*",
+                  "pubspec.yaml": ".metadata, .packages, all_lint_rules.yaml, analysis_options.yaml, build.yaml, pubspec.lock, pubspec_overrides.yaml",
+                  "pyproject.toml": ".commitlint*, .cspell*, .dlint.json, .dprint.json*, .editorconfig, .eslint*, .flake8, .flowconfig, .isort.cfg, .jslint*, .lintstagedrc*, .ls-lint.yml, .markdownlint*, .oxfmtrc.json, .oxfmtrc.json.bak, .oxfmtrc.jsonc, .oxlintrc.json, .oxlintrc.json.bak, .oxlintrc.jsonc, .pdm-python, .pdm.toml, .prettier*, .pylintrc, .python-version, .ruff.toml, .shellcheckrc, .stylelint*, .textlint*, .xo-config*, .yamllint*, MANIFEST.in, Pipfile, Pipfile.lock, alejandra.toml, biome.json*, commitlint*, cspell*, dangerfile*, dlint.json, dprint.json*, eslint*, hatch.toml, lint-staged*, oxlint.config.*, pdm.lock, phpcs.xml, poetry.lock, poetry.toml, prettier*, pyproject.toml, pyrightconfig.json, requirements*.in, requirements*.pip, requirements*.txt, ruff.toml, setup.cfg, setup.py, stylelint*, tox.ini, tslint*, uv.lock, uv.toml, xo.config.*",
+                  "quasar.conf*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, quasar.extensions.json, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "readme*": "AUTHORS, Authors, BACKERS*, Backers*, CHANGELOG*, CITATION*, CODEOWNERS, CODE_OF_CONDUCT*, CONTRIBUTING*, CONTRIBUTORS, CONTRIBUTORS.MD, CONTRIBUTORS.TXT, COPYING*, CREDITS, Changelog*, Citation*, Code_Of_Conduct*, Codeowners, Contributing*, Contributors, Contributors.md, Contributors.txt, Copying*, Credits, GOVERNANCE.MD, Governance.md, HISTORY.MD, History.md, LICENSE, LICENSE.MD, LICENSE.txt, License, License.md, License.txt, MAINTAINERS, Maintainers, README-*, README_*, RELEASE_NOTES*, ROADMAP.MD, Readme-*, Readme_*, Release_Notes*, Roadmap.md, SECURITY.MD, SPONSORS*, Security.md, Sponsors*, authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, contributors.md, contributors.txt, copying*, credits, governance.md, history.md, license, license.md, license.txt, maintainers, readme-*, readme_*, release_notes*, roadmap.md, security.md, sponsors*",
+                  "Readme*": "AUTHORS, Authors, BACKERS*, Backers*, CHANGELOG*, CITATION*, CODEOWNERS, CODE_OF_CONDUCT*, CONTRIBUTING*, CONTRIBUTORS, CONTRIBUTORS.MD, CONTRIBUTORS.TXT, COPYING*, CREDITS, Changelog*, Citation*, Code_Of_Conduct*, Codeowners, Contributing*, Contributors, Contributors.md, Contributors.txt, Copying*, Credits, GOVERNANCE.MD, Governance.md, HISTORY.MD, History.md, LICENSE, LICENSE.MD, LICENSE.txt, License, License.md, License.txt, MAINTAINERS, Maintainers, README-*, README_*, RELEASE_NOTES*, ROADMAP.MD, Readme-*, Readme_*, Release_Notes*, Roadmap.md, SECURITY.MD, SPONSORS*, Security.md, Sponsors*, authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, contributors.md, contributors.txt, copying*, credits, governance.md, history.md, license, license.md, license.txt, maintainers, readme-*, readme_*, release_notes*, roadmap.md, security.md, sponsors*",
+                  "README*": "AUTHORS, Authors, BACKERS*, Backers*, CHANGELOG*, CITATION*, CODEOWNERS, CODE_OF_CONDUCT*, CONTRIBUTING*, CONTRIBUTORS, CONTRIBUTORS.MD, CONTRIBUTORS.TXT, COPYING*, CREDITS, Changelog*, Citation*, Code_Of_Conduct*, Codeowners, Contributing*, Contributors, Contributors.md, Contributors.txt, Copying*, Credits, GOVERNANCE.MD, Governance.md, HISTORY.MD, History.md, LICENSE, LICENSE.MD, LICENSE.txt, License, License.md, License.txt, MAINTAINERS, Maintainers, README-*, README_*, RELEASE_NOTES*, ROADMAP.MD, Readme-*, Readme_*, Release_Notes*, Roadmap.md, SECURITY.MD, SPONSORS*, Security.md, Sponsors*, authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, contributors.md, contributors.txt, copying*, credits, governance.md, history.md, license, license.md, license.txt, maintainers, readme-*, readme_*, release_notes*, roadmap.md, security.md, sponsors*",
+                  "remix.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, remix.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "requirements.txt": ".editorconfig, .flake8, .isort.cfg, .python-version, requirements*.in, requirements*.pip, requirements*.txt, tox.ini",
+                  "rush.json": "*.code-workspace, .browserslist*, .circleci*, .commitlint*, .cspell*, .cursor*, .cz-config.js, .czrc, .dlint.json, .dprint.json*, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitmojirc.json, .gitpod*, .huskyrc*, .jslint*, .knip.*, .lintstagedrc*, .ls-lint.yml, .markdownlint*, .node-version, .nodemon*, .npm*, .nvmrc, .oxfmtrc.json, .oxfmtrc.json.bak, .oxfmtrc.jsonc, .oxlintrc.json, .oxlintrc.json.bak, .oxlintrc.jsonc, .pm2*, .pnp.*, .pnpm*, .prettier*, .pylintrc, .release-please*.json, .releaserc*, .ruff.toml, .sentry*, .shellcheckrc, .simple-git-hooks*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .versionrc*, .vscode*, .watchman*, .windsurfrules, .xo-config*, .yamllint*, .yarnrc*, Procfile, alejandra.toml, apollo.config.*, appveyor*, azure-pipelines*, biome.json*, bower.json, build.config.*, bun.lock, bun.lockb, bunfig.toml, colada.options.ts, commitlint*, crowdin*, cspell*, cz.config.*, dangerfile*, dlint.json, dprint.json*, ec.config.*, electron-builder.*, eslint*, firebase.json, grunt*, gulp*, jenkins*, knip.*, lefthook.*, lerna*, lint-staged*, nest-cli.*, netlify*, nixpacks*, nodemon*, npm-shrinkwrap.json, nx.*, oxlint.config.*, package-lock.json, package.nls*.json, phpcs.xml, pm2.*, pnpm*, prettier*, pullapprove*, pyrightconfig.json, release-please*.json, release-tasks.sh, release.config.*, renovate*, rolldown.config.*, rollup.config.*, rspack*, ruff.toml, sentry.*.config.ts, simple-git-hooks*, sonar-project.properties, stylelint*, taze.config.*, tsdown.config.*, tslint*, tsup.config.*, turbo*, typedoc*, unlighthouse*, vercel*, vetur.config.*, webpack*, workspace.json, wrangler.*, xo.config.*, yarn*",
+                  "sanity.config.*": "sanity.cli.*, sanity.types.ts, schema.json",
+                  "setup.cfg": ".editorconfig, .flake8, .isort.cfg, .python-version, MANIFEST.in, requirements*.in, requirements*.pip, requirements*.txt, setup.cfg, tox.ini",
+                  "setup.py": ".editorconfig, .flake8, .isort.cfg, .python-version, MANIFEST.in, requirements*.in, requirements*.pip, requirements*.txt, setup.cfg, setup.py, tox.ini",
+                  "shims.d.ts": "*.d.ts",
+                  "svelte.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, houdini.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, mdsvex.config.js, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vite.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "tauri.conf.json": "tauri.*.conf.json",
+                  "tauri.conf.json5": "tauri.*.conf.json5",
+                  "Tauri.toml": "Tauri.*.toml",
+                  "tsconfig.json": "tsconfig*.tsbuildinfo, tsconfig.*.json",
+                  "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+                  "*.asax": "$(capture).*.cs, $(capture).*.vb",
+                  "*.ascx": "$(capture).*.cs, $(capture).*.vb",
+                  "*.ashx": "$(capture).*.cs, $(capture).*.vb",
+                  "*.aspx": "$(capture).*.cs, $(capture).*.vb",
+                  "*.axaml": "$(capture).axaml.cs",
+                  "*.bloc.dart": "$(capture).event.dart, $(capture).state.dart",
+                  "*.c": "$(capture).h",
+                  "*.cc": "$(capture).hpp, $(capture).h, $(capture).hxx, $(capture).hh",
+                  "*.cjs": "$(capture).cjs.map, $(capture).*.cjs, $(capture)_*.cjs",
+                  "*.component.ts": "$(capture).component.html, $(capture).component.spec.ts, $(capture).component.css, $(capture).component.scss, $(capture).component.sass, $(capture).component.less",
+                  "*.cpp": "$(capture).hpp, $(capture).h, $(capture).hxx, $(capture).hh",
+                  "*.cs": "$(capture).*.cs, $(capture).cs.uid",
+                  "*.cshtml": "$(capture).cshtml.cs, $(capture).cshtml.css",
+                  "*.csproj": "*.config, *proj.user, appsettings.*, bundleconfig.json",
+                  "*.css": "$(capture).css.map, $(capture).*.css",
+                  "*.cxx": "$(capture).hpp, $(capture).h, $(capture).hxx, $(capture).hh",
+                  "*.dart": "$(capture).freezed.dart, $(capture).g.dart, $(capture).mapper.dart",
+                  "*.db": "*.db-shm, *.db-wal",
+                  "*.ex": "$(capture).html.eex, $(capture).html.heex, $(capture).html.leex",
+                  "*.fs": "$(capture).fs.js, $(capture).fs.js.map, $(capture).fs.jsx, $(capture).fs.ts, $(capture).fs.tsx, $(capture).fs.rs, $(capture).fs.php, $(capture).fs.dart",
+                  "*.gd": "$(capture).gd.uid",
+                  "*.gdshader": "$(capture).gdshader.uid",
+                  "*.gdshaderinc": "$(capture).gdshaderinc.uid",
+                  "*.go": "$(capture)_test.go",
+                  "*.java": "$(capture).class",
+                  "*.js": "$(capture).js.map, $(capture).*.js, $(capture)_*.js, $(capture).d.ts, $(capture).d.ts.map, $(capture).js.flow",
+                  "*.jsx": "$(capture).js, $(capture).*.jsx, $(capture)_*.js, $(capture)_*.jsx, $(capture).css, $(capture).module.css, $(capture).less, $(capture).module.less, $(capture).module.less.d.ts, $(capture).scss, $(capture).module.scss, $(capture).module.scss.d.ts",
+                  "*.master": "$(capture).*.cs, $(capture).*.vb",
+                  "*.md": "$(capture).*",
+                  "*.mjs": "$(capture).mjs.map, $(capture).*.mjs, $(capture)_*.mjs",
+                  "*.module.ts": "$(capture).resolver.ts, $(capture).controller.ts, $(capture).service.ts",
+                  "*.mts": "$(capture).mts.map, $(capture).*.mts, $(capture)_*.mts",
+                  "*.proto": "$(capture).pb.go, $(capture).pb.micro.go",
+                  "*.pubxml": "$(capture).pubxml.user",
+                  "*.py": "$(capture).pyi",
+                  "*.razor": "$(capture).razor.cs, $(capture).razor.css, $(capture).razor.scss",
+                  "*.resx": "$(capture).*.resx, $(capture).designer.cs, $(capture).designer.vb",
+                  "*.tex": "$(capture).acn, $(capture).acr, $(capture).alg, $(capture).aux, $(capture).bbl, $(capture).bbl-SAVE-ERROR, $(capture).bcf, $(capture).bib, $(capture).blg, $(capture).fdb_latexmk, $(capture).fls, $(capture).glg, $(capture).glo, $(capture).gls, $(capture).idx, $(capture).ind, $(capture).ist, $(capture).lof, $(capture).log, $(capture).lot, $(capture).nav, $(capture).out, $(capture).run.xml, $(capture).snm, $(capture).synctex.gz, $(capture).toc, $(capture).xdv",
+                  "*.ts": "$(capture).js, $(capture).d.ts.map, $(capture).*.ts, $(capture)_*.js, $(capture)_*.ts",
+                  "*.tsx": "$(capture).ts, $(capture).*.ts, $(capture).*.tsx, $(capture)_*.ts, $(capture)_*.tsx, $(capture).css, $(capture).module.css, $(capture).less, $(capture).module.less, $(capture).module.less.d.ts, $(capture).scss, $(capture).module.scss, $(capture).module.scss.d.ts, $(capture).css.ts",
+                  "*.vbproj": "*.config, *proj.user, appsettings.*, bundleconfig.json",
+                  "*.vue": "$(capture).*.ts, $(capture).*.js, $(capture).story.vue",
+                  "*.w": "$(capture).*.w, I$(capture).w",
+                  "*.wat": "$(capture).wasm",
+                  "*.xaml": "$(capture).xaml.cs"
+                },
+                "editor.undoStackSize": 200,
+                "eslint.run": "onSave",
+                "eslint.format.enable": false,
+                "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+                "typescript.tsserver.log": "off",
+                "update.showReleaseNotes": false,
+                "update.enableWindowsBackgroundUpdates": false,
+                "git.autoRepositoryDetection": false,
+                "git.detectSubmodules": false,
+                "git.autofetch": false,
+                "git.autorefresh": false,
+                "css.validate": false,
+                "diffEditor.codeLens": false,
+                "debug.openDebug": "neverOpen",
+                "debug.toolBarLocation": "hidden",
+                "debug.showInStatusBar": "never",
+                "editor.inlineSuggest.enabled": false,
+                "workbench.editor.enablePreviewFromQuickOpen": false,
+                "editor.inlayHints.enabled": "off",
+                "editor.parameterHints.enabled": false,
+                "editor.suggestOnTriggerCharacters": false,
+                "editor.acceptSuggestionOnEnter": "off",
+                "editor.acceptSuggestionOnCommitCharacter": false,
+                "editor.wordBasedSuggestions": "off",
+                "editor.formatOnType": false,
+                "editor.formatOnPaste": false,
+                "editor.formatOnSave": false,
+                "editor.semanticHighlighting.enabled": true,
+                "editor.occurrencesHighlight": "off",
+                "editor.selectionHighlight": true,
+                "editor.codeLens": false,
+                "editor.lightbulb.enabled": "onCode",
+                "merge-conflict.codeLens.enabled": false,
+                "multiDiffEditor.experimental.enabled": false,
+                "jsonc.validate.enable": true,
+                "json.validate.enable": true,
+                "prettier.enable": true,
+                "javascript.validate.enable": true,
+                "markdown.validate.enable": false,
+                "javascript.updateImportsOnFileMove.enabled": "always",
+                "extensions.ignoreRecommendations": true,
+                "github.copilot.enable": {
+                  "*": false,
+                  "plaintext": true,
+                  "markdown": false,
+                  "scminput": false
+                },
+                "files.watcherExclude": {
+                  ".vscode/ocrmnavigator/odin/version/**": true,
+                  "**/.git/objects/**": true,
+                  "**/.git/subtree-cache/**": true,
+                  "**/node_modules/**": true,
+                  "**/dist/**": true,
+                  "**/public/**": true,
+                  "**/build/**": true,
+                  "**/.vscode/**": true,
+                  "**/coverage/**": true,
+                  "**/.cache/**": true
+                },
+                "files.exclude": {},
+                "search.exclude": {
+                  ".vscode/ocrmnavigator/odin/version/**": true,
+                  "**/.git/objects/**": true,
+                  "**/.git/subtree-cache/**": true,
+                  "**/node_modules/**": true,
+                  "**/public/**": true,
+                  "**/dist/**": true,
+                  "**/build/**": true,
+                  "**/.vscode/**": true,
+                  "**/coverage/**": true,
+                  "**/.cache/**": true
+                },
+                "typescript.updateImportsOnFileMove.enabled": "always",
+                "typescript.validate.enable": true,
+                "markdown.server.log": "off",
+                "html.validate.scripts": false,
+                "search.smartCase": true,
+                "search.useIgnoreFiles": false,
+                "Codegeex.GenerationPreference": "line by line",
+                "Codegeex.Privacy": false,
+                "Codegeex.License": "",
+                "codegeex.codeLens.functionQuickOptions": {
+                  "addComment": false,
+                  "ghostComment": false,
+                  "fixBug": false,
+                  "generateUnitTest": false,
+                  "reviewCode": false,
+                  "codeOptimization": false,
+                  "addDocString": false,
+                  "addExceptionHandling": false,
+                  "printLogForDebugging": false,
+                  "improveRunningEfficiency": false,
+                  "renameSymbols": false,
+                  "newFileForDebugging": false,
+                  "tryANewApproach": false,
+                  "explainCode": false
+                },
+                "codegeex.codeLens.classQuickOptions": {
+                  "explainCode": false,
+                  "ghostComment": false,
+                  "fixBug": false,
+                  "generateUnitTest": false,
+                  "reviewCode": false,
+                  "addDocStringForClass": false,
+                  "addDocStringForMethods": false,
+                  "addComment": false
+                },
+                "geminicodeassist.chat.changeView": "Default diff view",
+                "geminicodeassist.displayInlineContextHint": false,
+                "geminicodeassist.enableTelemetry": false,
+                "geminicodeassist.inlineSuggestions.enableAuto": false,
+                "geminicodeassist.localCodebaseAwareness": false,
+                "[typescriptreact]": {
+                  "editor.defaultFormatter": "vscode.typescript-language-features"
+                },
+                "[json]": {
+                  "editor.defaultFormatter": "skyler.ocrmnav"
+                },
+                "[typescript]": {
+                  "editor.defaultFormatter": "skyler.ocrmnav"
+                },
+                "explorer.fileNesting.enabled": true
+              },
+              "autorun": [],
+              "onClose": [],
+              "git": {
+                "branch": "",
+                "onLoad": [],
+                "onClose": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PRIMARY",
+      "expanded": true,
+      "type": "folder",
+      "global": false,
+      "items": [
+        {
+          "label": "Relative path example",
+          "path": "app/routes/index.tsx",
+          "type": "file",
+          "icon": "vulknut"
+        },
+        {
+          "label": "Full path example",
+          "path": "F:/DevStack/app/routes/index.tsx",
+          "type": "file",
+          "icon": "vulknut"
+        },
+        {
+          "label": "File Nesting Example",
+          "path": "src/helpers/menus.ts",
+          "type": "file",
+          "icon": "vulknut",
+          "items": [
+            {
+              "label": "master.ts",
+              "path": "src/helpers/master.ts",
+              "type": "file",
+              "icon": "vulknut"
+            },
+            {
+              "label": "master.ts",
+              "path": "src/helpers/master.ts",
+              "type": "file",
+              "icon": "vulknut"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "__notes__",
+      "expanded": false,
+      "type": "folder",
+      "global": false,
+      "hidden": true,
+      "items": []
+    },
+    {
+      "label": "COMPONENTS",
+      "expanded": false,
+      "type": "folder",
+      "items": [],
+      "global": false
+    },
+    {
+      "label": "UTILS",
+      "expanded": false,
+      "type": "folder",
+      "items": [],
+      "global": false
+    }
+  ]
+}

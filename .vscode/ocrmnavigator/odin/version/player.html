@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIÐGARÐR SÐK - MUSIC PLAYER</title>
+  <link rel="stylesheet" href="vt.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="music-player" id="playerRoot">
+    <div class="album-art-container">
+
+      <svg class="curved-text-svg" viewBox="0 0 300 300">
+        <defs>
+          <path id="leftCurve" d="M 50, 150 A 100, 100 0 1, 1 50, 151" />
+          <path id="rightCurve" d="M 250, 150 A 100, 100 0 1, 0 250, 149" />
+        </defs>
+
+        <text class="vinyl-text">
+          <textPath href="#leftCurve" startOffset="50%" text-anchor="middle">
+            MIÐGARÐR SÐK
+          </textPath>
+        </text>
+
+        <text class="vinyl-text">
+          <textPath href="#rightCurve" startOffset="50%" text-anchor="middle">
+            Skyler Zanth
+          </textPath>
+        </text>
+      </svg>
+
+      <div class="album-art-wrapper" id="albumWrapper">
+        <img id="albumArt" class="album-art" src="record/darthvader.svg" onerror="this.src='record/darthvader.svg'"
+          alt="Album art">
+      </div>
+    </div>
+
+    <div class="song-info" id="uiFade">
+      <h2 id="songTitle" class="song-title">MIÐGARÐR SÐK</h2>
+      <p id="artistName" class="artist-name">MUSIC PLAYER</p>
+    </div>
+
+    <div class="controls ui-fadeable" id="uiFade3">
+      <button id="shuffleBtn" class="control-btn" title="Shuffle">
+        <img src="icons/random.svg" width="20" height="20" alt="Shuffle">
+      </button>
+      <button id="prevBtn" class="control-btn" title="Previous">
+        <img src="icons/back.svg" width="28" height="28" alt="Previous">
+      </button>
+      <button id="playPauseBtn" class="play-btn" title="Play/Pause">
+        <img id="playIcon" src="icons/play.svg" width="32" height="32" alt="Play">
+        <img id="pauseIcon" src="icons/pause.svg" width="32" height="32" alt="Pause" style="display:none">
+      </button>
+      <button id="nextBtn" class="control-btn" title="Next">
+        <img src="icons/next.svg" width="28" height="28" alt="Next">
+      </button>
+      <button id="repeatBtn" class="control-btn" title="Repeat">
+        <img id="repeatIcon" src="icons/repeat.svg" width="20" height="20" alt="Repeat">
+      </button>
+    </div>
+
+    <div class="progress-container ui-fadeable" id="uiFade2">
+      <span id="currentTime" class="time-current">00:00</span>
+      <div class="progress-bar-wrapper">
+        <input type="range" id="progressBar" class="progress-bar" min="0" max="100" value="0">
+      </div>
+      <span id="duration" class="time-duration">00:00</span>
+    </div>
+
+    <div class="volume-container ui-fadeable" id="uiFade4">
+      <span class="volume-label">
+        <img src="icons/volume.svg" width="20" height="20" alt="Volume">
+      </span>
+      <input type="range" id="volumeBoost" class="volume-slider" min="0" max="300" value="100">
+      <span id="boostValue" class="boost-value">100%</span>
+    </div>
+
+    <button id="togglePlaylistBtn" class="playlist-toggle ui-fadeable">
+      <img src="icons/note.svg" width="16" height="16" alt="Playlist">
+    </button>
+
+    <div id="playlist" class="playlist hidden"></div>
+
+    <div class="bottom-bar  ui-fadeable">
+      <button id="selectFolder" class="folder-btn" title="Open Folder">
+        <img src="icons/folder.svg" width="20" height="20" alt="Open Folder">
+      </button>
+      <select id="presetSelect" class="mode-select">
+        <option value="MODERN">Modern</option>
+        <option value="CREATIVE">Creative</option>
+        <option value="TECHNICAL">Technical</option>
+        <option value="FINTECH">Fintech</option>
+        <option value="LUXURY">Luxury</option>
+        <option value="BRUTALIST">Brutalist</option>
+        <option value="EDITORIAL">Editorial</option>
+        <option value="PLAYFUL">Playful</option>
+        <option value="MINIMALIST">Minimalist</option>
+        <option value="GAMING">Gaming</option>
+        <option value="MEDICAL">Medical</option>
+        <option value="ECOMMERCE">Ecommerce</option>
+        <option value="CORPORATE">Corporate</option>
+        <option value="RETRO">Retro</option>
+      </select>
+      <select id="fontSelect" class="theme-select">
+        <option value="">Default Font</option>
+        <option value="Norsebold">Norse Bold</option>
+        <option value="Norse">Norse</option>
+        <option value="Inter">Inter</option>
+        <option value="Roboto">Roboto</option>
+        <option value="Open Sans">Open Sans</option>
+        <option value="Poppins">Poppins</option>
+        <option value="Montserrat">Montserrat</option>
+        <option value="Outfit">Outfit</option>
+        <option value="Plus Jakarta Sans">Plus Jakarta Sans</option>
+        <option value="DM Sans">DM Sans</option>
+        <option value="IBM Plex Sans">IBM Plex Sans</option>
+        <option value="Nunito">Nunito</option>
+        <option value="Lato">Lato</option>
+        <option value="Geist">Geist</option>
+        <option value="Barlow">Barlow</option>
+        <option value="Public Sans">Public Sans</option>
+        <option value="Work Sans">Work Sans</option>
+        <option value="Manrope">Manrope</option>
+        <option value="Urbanist">Urbanist</option>
+        <option value="Figtree">Figtree</option>
+        <option value="Archivo">Archivo</option>
+        <option value="Merriweather">Merriweather</option>
+        <option value="Playfair Display">Playfair Display</option>
+        <option value="Lora">Lora</option>
+        <option value="Source Serif 4">Source Serif 4</option>
+        <option value="Libre Baskerville">Libre Baskerville</option>
+        <option value="Space Grotesk">Space Grotesk</option>
+        <option value="PT Serif">PT Serif</option>
+        <option value="Fraunces">Fraunces</option>
+        <option value="Cormorant Garamond">Cormorant Garamond</option>
+        <option value="Crimson Pro">Crimson Pro</option>
+        <option value="EB Garamond">EB Garamond</option>
+        <option value="Newsreader">Newsreader</option>
+        <option value="DM Serif Display">DM Serif Display</option>
+        <option value="Prata">Prata</option>
+        <option value="Bodoni Moda">Bodoni Moda</option>
+        <option value="Young Serif">Young Serif</option>
+        <option value="JetBrains Mono">JetBrains Mono</option>
+        <option value="Fira Code">Fira Code</option>
+        <option value="Geist Mono">Geist Mono</option>
+        <option value="IBM Plex Mono">IBM Plex Mono</option>
+        <option value="Roboto Mono">Roboto Mono</option>
+        <option value="Space Mono">Space Mono</option>
+        <option value="Source Code Pro">Source Code Pro</option>
+        <option value="Inconsolata">Inconsolata</option>
+        <option value="Ubuntu Mono">Ubuntu Mono</option>
+        <option value="Red Hat Mono">Red Hat Mono</option>
+        <option value="Sora">Sora</option>
+        <option value="Bricolage Grotesque">Bricolage Grotesque</option>
+        <option value="Syne">Syne</option>
+        <option value="Unbounded">Unbounded</option>
+        <option value="Righteous">Righteous</option>
+        <option value="Lexend">Lexend</option>
+        <option value="Kanit">Kanit</option>
+        <option value="Gabriela">Gabriela</option>
+        <option value="Delius Swash Caps">Delius Swash Caps</option>
+      </select>
+      <select id="themeSelect" class="theme-select">
+        <option value="Cirrus-Float">Cirrus Float</option>
+        <option value="Metropolis-Sky-Scape">Metropolis Sky Scape</option>
+        <option value="Mainframe-Terminal">Mainframe Terminal</option>
+        <option value="Sonic-Pulse">Sonic Pulse</option>
+        <option value="Solstice-Heat">Solstice Heat</option>
+        <option value="Polymer-Flow">Polymer Flow</option>
+        <option value="Vanguard-Strike">Vanguard Strike</option>
+        <option value="Tactical-Ops">Tactical Ops</option>
+        <option value="Meadow-Whisper">Meadow Whisper</option>
+        <option value="Studio-Apartment">Studio Apartment</option>
+        <option value="Terra-Verde">Terra Verde</option>
+        <option value="Black-Velvet-Luxe">Black Velvet Luxe</option>
+        <option value="Blueprint-Grid">Blueprint Grid</option>
+        <option value="Sorbet-Swirl">Sorbet Swirl</option>
+        <option value="Office-Paper">Office Paper</option>
+        <option value="Twilight-Bloom">Twilight Bloom</option>
+        <option value="Afterglow-Fade">Afterglow Fade</option>
+        <option value="Monet-Impressionism">Monet Impressionism</option>
+        <option value="Espresso-High">Espresso High</option>
+        <option value="Executive-Level">Executive Level</option>
+        <option value="Workplace-Chatter">Workplace Chatter</option>
+        <option value="Oracle-Vision">Oracle Vision</option>
+        <option value="Middle-Field-Canvas">Middle Field Canvas</option>
+        <option value="Dark-Crimson">Dark Crimson</option>
+        <option value="Crystal-Quartz">Crystal Quartz</option>
+        <option value="Solar-Flare">Solar Flare</option>
+        <option value="Amazon-Jungle">Amazon Jungle</option>
+        <option value="Cobalt-Ice">Cobalt Ice</option>
+        <option value="Midas-Touch">Midas Touch</option>
+        <option value="Amethyst-Stone">Amethyst Stone</option>
+        <option value="Smoldering-Ember">Smoldering Ember</option>
+        <option value="Acid-Trip">Acid Trip</option>
+        <option value="Loki">Loki</option>
+        <option value="Silk-Petal">Silk Petal</option>
+        <option value="Aqua-Glacier">Aqua Glacier</option>
+        <option value="Nightshade-Venom">Nightshade Venom</option>
+        <option value="Another-Acid-Trip">Another Acid Trip</option>
+        <option value="Deep-Abyss">Deep Abyss</option>
+        <option value="Fifth-Element-Aether">Fifth Element Aether</option>
+        <option value="True-Veridian">True Veridian</option>
+        <option value="Deep-Teal">Deep Teal</option>
+        <option value="Interstellar-Nebula">Interstellar Nebula</option>
+        <option value="Granite-Top">Granite Top</option>
+        <option value="Ti-Titanium-22">Ti Titanium 22</option>
+        <option value="Graphite-Neutron-Moderator">Graphite Neutron Moderator</option>
+        <option value="Concrete-slab">Concrete Slab</option>
+        <option value="C-Carbon-6">C Carbon 6</option>
+        <option value="Deep-Void">Deep Void</option>
+        <option value="Synthwave-Neon">Synthwave Neon</option>
+        <option value="Geek-Blue">Geek Blue</option>
+        <option value="Desert-Night">Desert Night</option>
+        <option value="Cyber-Industrial">Cyber Industrial</option>
+        <option value="Forest-Tech">Forest Tech</option>
+        <option value="Oceanic-Sunset">Oceanic Sunset</option>
+        <option value="Deep-Emerald">Deep Emerald</option>
+        <option value="Deep-Sea-Navigator">Deep Sea Navigator</option>
+        <option value="Glacier-Blue">Glacier Blue</option>
+        <option value="High-Alert-Crimson">High Alert Crimson</option>
+        <option value="Cyber-Pop">Cyber Pop</option>
+        <option value="Forest-Tech-2">Forest Tech 2</option>
+        <option value="Frozen-Deep">Frozen Deep</option>
+        <option value="Pastel-Sorbet">Pastel Sorbet</option>
+        <option value="Modern-Retro">Modern Retro</option>
+        <option value="Obsidian-Wine">Obsidian Wine</option>
+        <option value="Mineral-Forest">Mineral Forest</option>
+        <option value="Deep-Ocean">Deep Ocean</option>
+        <option value="Retro-Arcade">Retro Arcade</option>
+        <option value="Vintage-Heritage">Vintage Heritage</option>
+        <option value="Oceanic-Gradient">Oceanic Gradient</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="themeNgin.js"></script>
+  <script src="presetsNgin.js"></script>
+  <script src="fontsNgin.js"></script>
+  <script src="player.js"></script>
+</body>
+
+</html>
