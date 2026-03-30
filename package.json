@@ -1,0 +1,23 @@
+{
+  "name": "midgardr-sdk-media-player",
+  "version": "1.0.0",
+  "description": "<a style=\"text-align: center;\" href=\"https://marketplace.visualstudio.com/items?itemName=skyler.ocrmnav\">\r   <img style=\"display: block; margin: 0 auto;\" src=\"https://raw.githubusercontent.com/8an3/midgardr-notes/main/utils/odin.png\" />\r   </a>",
+  "homepage": "https://github.com/8an3/audioplayer#readme",
+  "bugs": {
+    "url": "https://github.com/8an3/audioplayer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8an3/audioplayer.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "player.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
