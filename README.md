@@ -21,7 +21,7 @@
 
 ## Key Features
 
-- **Displays tracks cover image**, if the current track does not have a cover photo one of 8 custom svgs replaces it on the spinning vynal record player that activates whenever a track is playing.
+- **Displays track cover images**, if the current track does not have a cover photo one of 8 custom svgs replaces it on the spinning vynal record player that activates whenever a track is playing.
 - **Random**
 - **No repeat** - **Repeat all** - **Repeat single track**
 - **Volume booster**, increasing the volume up to 300%. This is the ONLY media player that I know of, that features a volume booster, that ACTUALLY boosts the volume. The next best thing would be vlc, but that has multiple asterisks. I do not know of a single chrome extension that has both, it either one or the other and trust me, I've been searching for months and have tested every single one I could find. Just finding a good booster alone, is difficult. This solves both those problems. NOTE: I do not know what api the other volume booster extensions use, as this one is defiantly louder. Typically, I can listen to music with them cranked pretty high. This one I haven't pushed past 150%, so just be mindfull of that and don't accidently max it with an expensive sound system. For that reason, for the meantime, I did not include the feature where your boosted volume setting is saved in chromes api. That may change in the future, where you would have to explicitly turn it on.
