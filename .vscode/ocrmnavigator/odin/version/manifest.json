@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Music Player",
   "version": "1.0",
-  "permissions": ["storage"],
+  "permissions": ["storage","FileSystemHandle"],
   "background": {
     "service_worker": "background.js"
   },

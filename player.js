@@ -246,8 +246,10 @@ function updateUI() {
   const wrapper = document.getElementById('albumWrapper');
   if (isPlaying) {
     wrapper.classList.add('playing');
+    document.querySelector('.song-info-svg')?.classList.add('playing');
   } else {
     wrapper.classList.remove('playing');
+    document.querySelector('.song-info-svg')?.classList.remove('playing');
   }
   renderPlaylist();
   // document.getElementById('trackCount').textContent = playlist.length;
@@ -289,22 +291,63 @@ audio.addEventListener('timeupdate', () => {
   document.getElementById('duration').textContent = formatTime(audio.duration);
 });
 
-document.getElementById('selectFolder').addEventListener('click', () => {
-  const input = document.createElement('input');
-  input.type = 'file';
-  input.accept = 'audio/*';
-  input.multiple = true;
-  input.webkitdirectory = true;
-  input.addEventListener('change', () => {
-    const files = Array.from(input.files).filter(f => f.type.startsWith('audio/'));
-    if (!files.length) return;
-    blobUrls.forEach(u => URL.revokeObjectURL(u));
-    blobUrls = files.map(f => URL.createObjectURL(f));
-    playlist = files;
-    currentIndex = 0;
-    playIndex(0);
+async function loadDirectoryHandle(dirHandle) {
+  const files = [];
+  for await (const entry of dirHandle.values()) {
+    if (entry.kind === 'file') {
+      const file = await entry.getFile();
+      if (file.type.startsWith('audio/')) files.push(file);
+    }
+  }
+  if (!files.length) return;
+  blobUrls.forEach(u => URL.revokeObjectURL(u));
+  blobUrls = files.map(f => URL.createObjectURL(f));
+  playlist = files;
+  currentIndex = 0;
+  playIndex(0);
+}
+
+async function saveDirectoryHandle(dirHandle) {
+  const db = await new Promise((res, rej) => {
+    const req = indexedDB.open('musicPlayerDB', 1);
+    req.onupgradeneeded = e => e.target.result.createObjectStore('handles');
+    req.onsuccess = e => res(e.target.result);
+    req.onerror = () => rej();
   });
-  input.click();
+  const tx = db.transaction('handles', 'readwrite');
+  tx.objectStore('handles').put(dirHandle, 'lastDir');
+}
+
+async function loadSavedDirectoryHandle() {
+  const db = await new Promise((res, rej) => {
+    const req = indexedDB.open('musicPlayerDB', 1);
+    req.onupgradeneeded = e => e.target.result.createObjectStore('handles');
+    req.onsuccess = e => res(e.target.result);
+    req.onerror = () => rej();
+  });
+  return new Promise((res) => {
+    const tx = db.transaction('handles', 'readonly');
+    const req = tx.objectStore('handles').get('lastDir');
+    req.onsuccess = e => res(e.target.result ?? null);
+    req.onerror = () => res(null);
+  });
+}
+
+let pendingResumeHandle = null;
+
+document.getElementById('selectFolder').addEventListener('click', async () => {
+  if (pendingResumeHandle) {
+    const dirHandle = pendingResumeHandle;
+    pendingResumeHandle = null;
+    document.getElementById('selectFolder').innerHTML = '<img src="icons/folder.svg" width="20" height="20" alt="Open Folder">';
+    const perm = await dirHandle.requestPermission({ mode: 'read' });
+    if (perm === 'granted') await loadDirectoryHandle(dirHandle);
+    return;
+  }
+  let dirHandle;
+  try { dirHandle = await window.showDirectoryPicker(); } catch { return; }
+  await saveDirectoryHandle(dirHandle);
+  await loadDirectoryHandle(dirHandle);
 });
 
 document.getElementById('playPauseBtn').addEventListener('click', () => {
@@ -341,10 +384,6 @@ document.getElementById('repeatBtn').addEventListener('click', () => { repeat = 
 document.getElementById('progressBar').addEventListener('input', (e) => { if (audio.duration) audio.currentTime = (e.target.value / 100) * audio.duration; startFadeTimer(); });
 document.getElementById('volumeBoost').addEventListener('input', (e) => { const val = parseInt(e.target.value); gainNode.gain.value = val / 100; document.getElementById('boostValue').textContent = val + '%'; startFadeTimer(); });
 document.getElementById('togglePlaylistBtn').addEventListener('click', () => { document.getElementById('playlist').classList.toggle('hidden'); });
-document.getElementById('presetSelect').addEventListener('change', (e) => {
-  applyPreset(e.target.value);
-  chrome.storage.local.set({ preset: e.target.value });
-});
 document.getElementById('fontSelect').addEventListener('change', (e) => {
   if (e.target.value) applyFont(e.target.value);
   chrome.storage.local.set({ font: e.target.value });
@@ -355,9 +394,8 @@ document.getElementById('themeSelect').addEventListener('change', (e) => {
 });
 
 chrome.storage.local.get(['preset', 'theme', 'font'], (result) => {
-  const preset = result.preset ?? 'MODERN';
-  const theme = result.theme ?? 'Modern-Retro';
-  document.getElementById('presetSelect').value = preset;
+  const preset = 'MINIMALIST'; //  result.preset ??
+  const theme = result.theme ?? 'Cyber-Pop';
   document.getElementById('themeSelect').value = theme;
   applyPreset(preset);
   applyTheme(theme);
@@ -365,6 +403,11 @@ chrome.storage.local.get(['preset', 'theme', 'font'], (result) => {
     document.getElementById('fontSelect').value = result.font;
     applyFont(result.font);
   }
+  loadSavedDirectoryHandle().then((dirHandle) => {
+    if (!dirHandle) return;
+    pendingResumeHandle = dirHandle;
+    document.getElementById('selectFolder').innerHTML = '<img src="icons/folder.svg" width="20" height="20" alt="Resume">';
+  });
 });
 updateUI();
 startFadeTimer();

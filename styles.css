@@ -27,9 +27,9 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  width: 500px;
-  min-height: 750px;
-    height: 750px;
+  width: 450px;
+  min-height: 650px;
+    height: 650px;
   background: var(--background);
   font-family: var(--font-sans);
   color: var(--foreground);
@@ -303,8 +303,8 @@ color: hsl(from var(--foreground));
 /* text wrapper surrounding the turn table */
 .album-art-container {
   position: relative;
-  width: 300px; /* Adjust based on your UI */
-  height: 300px;
+  width: 325px; /* Adjust based on your UI */
+  height: 325px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -334,3 +334,59 @@ font-family: 'NorseCustom', sans-serif;
   position: relative;
   z-index: 5;
 }
+.song-info-svg {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  pointer-events: none;
+  z-index: 10;
+  animation: rotateCCW 20s linear infinite;
+  animation-play-state: paused;
+}
+
+.album-art-wrapper.playing ~ .song-info-svg,
+.song-info-svg.playing {
+  animation-play-state: running;
+}
+
+.song-info-text {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+@keyframes rotateCCW {
+  from { transform-origin: center; transform: rotate(0deg); }
+  to { transform-origin: center; transform: rotate(-360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

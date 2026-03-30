@@ -18,8 +18,8 @@ function openWindow() {
   chrome.windows.create({
     url: chrome.runtime.getURL('player.html'),
     type: 'popup',
-    width: 500,
-    height: 750,
+    width: 465,
+    height: 700,
     focused: true
   }, (win) => {
     windowId = win.id;

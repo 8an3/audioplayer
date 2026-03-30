@@ -15,8 +15,10 @@
 
       <svg class="curved-text-svg" viewBox="0 0 300 300">
         <defs>
-          <path id="leftCurve" d="M 50, 150 A 100, 100 0 1, 1 50, 151" />
-          <path id="rightCurve" d="M 250, 150 A 100, 100 0 1, 0 250, 149" />
+          <path id="leftCurve" d="M 150,250 A 100,100 0 0,0 150,50" />
+          <path id="rightCurve" d="M 150,50 A 100,100 0 0,0 150,250" />
+          <path id="songTitleCurve" d="M 25,150 A 125,125 0 0,0 275,150" />
+          <path id="artistCurve" d="M 275,150 A 125,125 0 0,0 25,150" />
         </defs>
 
         <text class="vinyl-text">
@@ -36,14 +38,24 @@
         <img id="albumArt" class="album-art" src="record/darthvader.svg" onerror="this.src='record/darthvader.svg'"
           alt="Album art">
       </div>
-    </div>
-
-    <div class="song-info" id="uiFade">
-      <h2 id="songTitle" class="song-title">MIÐGARÐR SÐK</h2>
-      <p id="artistName" class="artist-name">MUSIC PLAYER</p>
+    <svg class="curved-text-svg song-info-svg" viewBox="0 0 300 300" id="uiFade">
+        <text class="vinyl-text song-info-text">
+          <textPath href="#artistCurve" startOffset="50%" text-anchor="middle">
+            <tspan id="artistName">MUSIC PLAYER</tspan>
+          </textPath>
+        </text>
+        <text class="vinyl-text song-info-text">
+          <textPath href="#songTitleCurve" startOffset="50%" text-anchor="middle">
+            <tspan id="songTitle">MIÐGARÐR SÐK</tspan>
+          </textPath>
+        </text>
+      </svg>
     </div>
 
     <div class="controls ui-fadeable" id="uiFade3">
+      <button id="selectFolder" class="folder-btn" title="Open Folder">
+        <img src="icons/folder.svg" width="20" height="20" alt="Open Folder">
+      </button>
       <button id="shuffleBtn" class="control-btn" title="Shuffle">
         <img src="icons/random.svg" width="20" height="20" alt="Shuffle">
       </button>
@@ -60,6 +72,9 @@
       <button id="repeatBtn" class="control-btn" title="Repeat">
         <img id="repeatIcon" src="icons/repeat.svg" width="20" height="20" alt="Repeat">
       </button>
+         <button id="togglePlaylistBtn" class="playlist-toggle ui-fadeable">
+      <img src="icons/note.svg" width="16" height="16" alt="Playlist">
+    </button>
     </div>
 
     <div class="progress-container ui-fadeable" id="uiFade2">
@@ -78,32 +93,11 @@
       <span id="boostValue" class="boost-value">100%</span>
     </div>
 
-    <button id="togglePlaylistBtn" class="playlist-toggle ui-fadeable">
-      <img src="icons/note.svg" width="16" height="16" alt="Playlist">
-    </button>
+ 
 
     <div id="playlist" class="playlist hidden"></div>
 
     <div class="bottom-bar  ui-fadeable">
-      <button id="selectFolder" class="folder-btn" title="Open Folder">
-        <img src="icons/folder.svg" width="20" height="20" alt="Open Folder">
-      </button>
-      <select id="presetSelect" class="mode-select">
-        <option value="MODERN">Modern</option>
-        <option value="CREATIVE">Creative</option>
-        <option value="TECHNICAL">Technical</option>
-        <option value="FINTECH">Fintech</option>
-        <option value="LUXURY">Luxury</option>
-        <option value="BRUTALIST">Brutalist</option>
-        <option value="EDITORIAL">Editorial</option>
-        <option value="PLAYFUL">Playful</option>
-        <option value="MINIMALIST">Minimalist</option>
-        <option value="GAMING">Gaming</option>
-        <option value="MEDICAL">Medical</option>
-        <option value="ECOMMERCE">Ecommerce</option>
-        <option value="CORPORATE">Corporate</option>
-        <option value="RETRO">Retro</option>
-      </select>
       <select id="fontSelect" class="theme-select">
         <option value="">Default Font</option>
         <option value="Norsebold">Norse Bold</option>
