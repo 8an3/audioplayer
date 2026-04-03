@@ -62,6 +62,7 @@ git clone https://github.com/8an3/audioplayer.git
 ## You may also like...
 
 - [DevStack](https://marketplace.visualstudio.com/items?itemName=skyler.ocrmnav) - Check out MIÐGARÐR SÐK by visiting the VSCode extension
+  - The extension also has the media player as I have converted it to work within vscodes webviews and plays in the sidebar. Music continues whether it is focused or not.
   
 
 ## License

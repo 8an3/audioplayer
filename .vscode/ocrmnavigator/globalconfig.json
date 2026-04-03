@@ -2111,57 +2111,6 @@
       ]
     },
     {
-      "label": "PROMPT",
-      "expanded": false,
-      "type": "folder",
-      "global": true,
-      "icon": "md-baldr",
-      "items": [
-        {
-          "label": "Prompt - Reusable Comps",
-          "path": "",
-          "type": "copyValue",
-          "icon": "md-baldr"
-        },
-        {
-          "label": "Prompt - Templates",
-          "path": "",
-          "type": "copyValue",
-          "icon": "md-baldr"
-        },
-        {
-          "label": "Prompt - UI Lib Objs",
-          "path": "",
-          "type": "copyValue",
-          "icon": "md-baldr"
-        },
-        {
-          "label": "Prompt - Blocks",
-          "path": "",
-          "type": "copyValue",
-          "icon": "md-baldr"
-        },
-        {
-          "label": "Prompt - VSCode Extension",
-          "path": "",
-          "type": "copyValue",
-          "icon": "md-baldr"
-        },
-        {
-          "label": "Prompt - Remix-Run",
-          "path": "",
-          "type": "copyValue",
-          "icon": "md-baldr"
-        },
-        {
-          "label": "Prompt - Default",
-          "path": "",
-          "type": "copyValue",
-          "icon": "md-baldr"
-        }
-      ]
-    },
-    {
       "label": "OTHER",
       "expanded": false,
       "type": "folder",

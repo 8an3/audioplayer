@@ -1,3 +1,4 @@
+//background.js
 let windowId = null;
 
 chrome.action.onClicked.addListener(() => {
